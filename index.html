@@ -3,89 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bugalgo — AçıkEczane</title>
-  <meta name="description" content="AçıkEczane: Nöbetçi eczane bilgilerine anında ulaşın, eczanelerle güvenli mesajlaşın.">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; background: #fafafa; }
-    a { color: #802621; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .header { background: #802621; color: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
-    .header h1 { font-size: 1.4rem; font-weight: 700; }
-    .header nav a { color: #fff; margin-left: 1.5rem; font-size: 0.95rem; }
-    .header nav a:hover { opacity: 0.85; text-decoration: none; }
-
-    .hero { text-align: center; padding: 5rem 2rem 4rem; background: linear-gradient(135deg, #802621 0%, #a33b35 100%); color: #fff; }
-    .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; font-weight: 800; }
-    .hero p { font-size: 1.15rem; max-width: 600px; margin: 0 auto 2rem; opacity: 0.92; line-height: 1.6; }
-    .hero .badges { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    .hero .badges a img { height: 48px; border-radius: 8px; }
-
-    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; max-width: 900px; margin: -2rem auto 4rem; padding: 0 2rem; }
-    .feature { background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); text-align: center; }
-    .feature .icon { font-size: 2.2rem; margin-bottom: 0.8rem; }
-    .feature h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: #802621; }
-    .feature p { font-size: 0.92rem; color: #555; line-height: 1.5; }
-
-    .footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem; font-size: 0.85rem; }
-    .footer a { color: #ccc; }
-    .footer .links { margin-bottom: 0.8rem; }
-    .footer .links a { margin: 0 0.8rem; }
-
-    @media (max-width: 600px) {
-      .hero h2 { font-size: 1.8rem; }
-      .hero p { font-size: 1rem; }
-      .header { flex-direction: column; gap: 0.5rem; }
-    }
-  </style>
+  <title>Bugalgo — Teknoloji Cozumleri</title>
+  <meta name="description" content="Bugalgo: Saglik ve teknoloji alaninda yenilikci mobil uygulamalar gelistiriyoruz.">
+  <meta property="og:title" content="Bugalgo — Teknoloji Cozumleri">
+  <meta property="og:description" content="Saglik ve teknoloji alaninda yenilikci mobil uygulamalar.">
+  <meta property="og:url" content="https://bugalgo.com">
+  <link rel="canonical" href="https://bugalgo.com">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header class="header">
-    <h1>Bugalgo</h1>
-    <nav>
-      <a href="/">Ana Sayfa</a>
-      <a href="/support.html">Destek</a>
-      <a href="/privacy.html">Gizlilik</a>
-      <a href="/terms.html">Kullanim Sozlesmesi</a>
-    </nav>
-  </header>
 
+  <header id="site-header" class="site-header"></header>
+
+  <!-- HERO -->
   <section class="hero">
-    <h2>AcikEczane</h2>
-    <p>Nobetci eczane bilgilerine aninda ulasin, eczanelerle uctan uca sifreli mesajlasma ile guvenle iletisim kurun.</p>
-    <div class="badges">
-      <a href="https://apps.apple.com/tr/app/acikeczane/id6760047566">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store'dan indir">
-      </a>
+    <div class="container">
+      <h1>Bugalgo</h1>
+      <p>Gunluk hayati kolaylastiran, guvenli ve kullanici odakli mobil uygulamalar gelistiriyoruz.</p>
+      <a href="/products/" class="btn btn--white">Urunlerimizi Kesfet</a>
     </div>
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <div class="icon">📍</div>
-      <h3>Nobetci Eczane Bul</h3>
-      <p>Konumunuza en yakin nobetci eczaneleri harita ve liste gorunumunde gorun.</p>
-    </div>
-    <div class="feature">
-      <div class="icon">🔒</div>
-      <h3>Sifreli Mesajlasma</h3>
-      <p>Eczanelerle uctan uca sifreli mesajlasma. Mesajlarinizi kimse okuyamaz.</p>
-    </div>
-    <div class="feature">
-      <div class="icon">💊</div>
-      <h3>Recete Paylasimi</h3>
-      <p>Recetenizi gondermeden once kisisel bilgileriniz otomatik olarak anonimlestirilir.</p>
+  <!-- URUNLER -->
+  <section class="section" id="urunler">
+    <div class="container">
+      <h2 class="section__title">Urunlerimiz</h2>
+      <p class="section__subtitle">Gelistirdigimiz uygulamalarla milyonlarca kullaniciya ulasiyoruz.</p>
+      <div class="card-grid" style="max-width:500px;margin:0 auto">
+        <a href="/products/acikeczane/" class="card card--product card--link">
+          <div class="card__icon">💊</div>
+          <h3 class="card__title">AcikEczane</h3>
+          <p class="card__text">Nobetci eczane bilgilerine aninda ulasin, eczanelerle uctan uca sifreli mesajlasma ile guvenle iletisim kurun.</p>
+          <span class="btn btn--outline" style="margin-top:1.2rem">Detayli Bilgi &rarr;</span>
+        </a>
+      </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="links">
-      <a href="/privacy.html">Gizlilik Politikasi</a>
-      <a href="/terms.html">Kullanim Sozlesmesi</a>
-      <a href="/support.html">Destek</a>
+  <!-- HAKKIMIZDA -->
+  <section class="section section--alt" id="hakkimizda">
+    <div class="container">
+      <h2 class="section__title">Hakkimizda</h2>
+      <p class="section__subtitle">Teknoloji ile topluma deger katmayi hedefliyoruz.</p>
+      <div class="about-content">
+        <div class="about-content__text">
+          <p>Bugalgo, saglik ve gunluk yasam alaninda yenilikci mobil uygulamalar gelistiren bir teknoloji girisimdir.</p>
+          <p>Kullanici gizliligini on planda tutarak, uctan uca sifreleme ve anonim kullanim gibi ileri guvenlik standartlariyla urunler olusturuyoruz.</p>
+          <p>Turkiye merkezli olarak faaliyet gosteriyoruz ve urunlerimiz App Store'da yayindadir.</p>
+        </div>
+        <div class="about-stats">
+          <div class="about-stat">
+            <div class="about-stat__number">1</div>
+            <div class="about-stat__label">Yayinda Uygulama</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat__number">E2E</div>
+            <div class="about-stat__label">Uctan Uca Sifreleme</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat__number">KVKK</div>
+            <div class="about-stat__label">Uyumlu Altyapi</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat__number">iOS</div>
+            <div class="about-stat__label">App Store'da Yayinda</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p>&copy; 2026 Bugalgo. Tum haklari saklidir.</p>
-  </footer>
+  </section>
+
+  <!-- ILETISIM -->
+  <section class="section" id="iletisim">
+    <div class="container">
+      <h2 class="section__title">Iletisim</h2>
+      <p class="section__subtitle">Sorulariniz veya is birlikleriniz icin bize ulasin.</p>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <div class="contact-item__icon">📧</div>
+          <div class="contact-item__title">E-posta</div>
+          <div class="contact-item__text">
+            <a href="mailto:yenererdolu@gmail.com">yenererdolu@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon">📍</div>
+          <div class="contact-item__title">Konum</div>
+          <div class="contact-item__text">Istanbul, Turkiye</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon">🌐</div>
+          <div class="contact-item__title">Web</div>
+          <div class="contact-item__text">
+            <a href="https://bugalgo.com">bugalgo.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <script src="/js/main.js"></script>
 </body>
 </html>
