@@ -1,1 +1,91 @@
-<\!DOCTYPE html><html><head><title>AçıkEczane</title></head><body><h1>AçıkEczane</h1></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bugalgo — AçıkEczane</title>
+  <meta name="description" content="AçıkEczane: Nöbetçi eczane bilgilerine anında ulaşın, eczanelerle güvenli mesajlaşın.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; background: #fafafa; }
+    a { color: #802621; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .header { background: #802621; color: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .header h1 { font-size: 1.4rem; font-weight: 700; }
+    .header nav a { color: #fff; margin-left: 1.5rem; font-size: 0.95rem; }
+    .header nav a:hover { opacity: 0.85; text-decoration: none; }
+
+    .hero { text-align: center; padding: 5rem 2rem 4rem; background: linear-gradient(135deg, #802621 0%, #a33b35 100%); color: #fff; }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; font-weight: 800; }
+    .hero p { font-size: 1.15rem; max-width: 600px; margin: 0 auto 2rem; opacity: 0.92; line-height: 1.6; }
+    .hero .badges { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .hero .badges a img { height: 48px; border-radius: 8px; }
+
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; max-width: 900px; margin: -2rem auto 4rem; padding: 0 2rem; }
+    .feature { background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); text-align: center; }
+    .feature .icon { font-size: 2.2rem; margin-bottom: 0.8rem; }
+    .feature h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: #802621; }
+    .feature p { font-size: 0.92rem; color: #555; line-height: 1.5; }
+
+    .footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem; font-size: 0.85rem; }
+    .footer a { color: #ccc; }
+    .footer .links { margin-bottom: 0.8rem; }
+    .footer .links a { margin: 0 0.8rem; }
+
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 1.8rem; }
+      .hero p { font-size: 1rem; }
+      .header { flex-direction: column; gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Bugalgo</h1>
+    <nav>
+      <a href="/">Ana Sayfa</a>
+      <a href="/support.html">Destek</a>
+      <a href="/privacy.html">Gizlilik</a>
+      <a href="/terms.html">Kullanim Sozlesmesi</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>AcikEczane</h2>
+    <p>Nobetci eczane bilgilerine aninda ulasin, eczanelerle uctan uca sifreli mesajlasma ile guvenle iletisim kurun.</p>
+    <div class="badges">
+      <a href="https://apps.apple.com/tr/app/acikeczane/id6760047566">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store'dan indir">
+      </a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <div class="icon">📍</div>
+      <h3>Nobetci Eczane Bul</h3>
+      <p>Konumunuza en yakin nobetci eczaneleri harita ve liste gorunumunde gorun.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🔒</div>
+      <h3>Sifreli Mesajlasma</h3>
+      <p>Eczanelerle uctan uca sifreli mesajlasma. Mesajlarinizi kimse okuyamaz.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">💊</div>
+      <h3>Recete Paylasimi</h3>
+      <p>Recetenizi gondermeden once kisisel bilgileriniz otomatik olarak anonimlestirilir.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="links">
+      <a href="/privacy.html">Gizlilik Politikasi</a>
+      <a href="/terms.html">Kullanim Sozlesmesi</a>
+      <a href="/support.html">Destek</a>
+    </div>
+    <p>&copy; 2026 Bugalgo. Tum haklari saklidir.</p>
+  </footer>
+</body>
+</html>
