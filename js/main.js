@@ -61,9 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="site-footer__links">
           <a href="/">Ana Sayfa</a>
           <a href="/products/">Urunler</a>
-          <a href="/products/acikeczane/privacy/">Gizlilik</a>
-          <a href="/products/acikeczane/terms/">Kullanim Sozlesmesi</a>
-          <a href="/products/acikeczane/support/">Destek</a>
+          <a href="/products/acikeczane/">AcikEczane</a>
+          <a href="/products/sinavkocu/">Sinav Kocu</a>
+          <a href="/products/sinavkocu/privacy/">Gizlilik</a>
+          <a href="/products/sinavkocu/terms/">Kullanim Sozlesmesi</a>
         </div>
         <div class="site-footer__copy">&copy; ${year} Bugalgo. Tum haklari saklidir.</div>
       </div>`;
