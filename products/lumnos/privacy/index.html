@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Lumnos — Bugalgo</title>
+  <meta name="description" content="Lumnos Privacy Policy. Learn how your personal data is protected, including GDPR and KVKK compliance.">
+  <meta property="og:title" content="Privacy Policy — Lumnos">
+  <meta property="og:url" content="https://bugalgo.com/products/lumnos/privacy/">
+  <link rel="canonical" href="https://bugalgo.com/products/lumnos/privacy/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header id="site-header" class="site-header"></header>
+
+  <section class="section">
+    <div class="container container--narrow">
+      <nav class="breadcrumb">
+        <a href="/">Bugalgo</a> <span>/</span> <a href="/products/">Products</a> <span>/</span> <a href="/products/lumnos/">Lumnos</a> <span>/</span> Privacy Policy
+      </nav>
+
+      <div class="content-page">
+        <h2>Privacy Policy</h2>
+        <p class="date">Last updated: April 17, 2026</p>
+
+        <p>Lumnos mobile application ("App") is developed and operated by Bugalgo ("we", "us", or "our"). We are committed to protecting your privacy. This Privacy Policy explains what data we collect, how we use it, and your rights under applicable data protection laws including the EU General Data Protection Regulation (GDPR) and the Turkish Personal Data Protection Law (KVKK, Law No. 6698).</p>
+
+        <h3>1. Data Controller</h3>
+        <p>The data controller for the Lumnos application is Bugalgo, based in Istanbul, Turkey.</p>
+        <p><strong>Contact:</strong> <a href="mailto:info@lumnos.app">info@lumnos.app</a></p>
+
+        <h3>2. Data We Collect</h3>
+        <p>Lumnos operates on a data minimization principle. Users can use the app anonymously without providing any personal information.</p>
+        <p>The following data may be processed:</p>
+        <ul>
+          <li><strong>Firebase anonymous ID (UID)</strong> — automatically generated to identify your account; does not contain real identity information</li>
+          <li><strong>Study session data</strong> — subject name, study duration, date (stored locally on your device only, in a SQLite database)</li>
+          <li><strong>User preferences</strong> — exam type, daily goals, Pomodoro settings, notification preferences (stored locally on your device via AsyncStorage)</li>
+          <li><strong>Achievement data</strong> — earned badges and progress (stored locally on your device)</li>
+          <li><strong>Push notification token</strong> — used for scheduling local notifications only</li>
+          <li><strong>Device identifiers</strong> — may be collected by third-party SDKs for advertising and analytics purposes</li>
+          <li><strong>Country and language</strong> — used to provide localized exam lists and interface language</li>
+        </ul>
+
+        <h3>3. Where Data Is Stored</h3>
+        <p><strong>Important:</strong> Lumnos stores your study data (sessions, statistics, achievements, preferences) locally on your device only. This data is never sent to any server.</p>
+        <ul>
+          <li><strong>SQLite database (on device)</strong> — study sessions, subject-level statistics</li>
+          <li><strong>AsyncStorage (on device)</strong> — user profile, settings, achievements, notification preferences</li>
+          <li><strong>Firebase Authentication (cloud)</strong> — anonymous ID (UID) only; no real identity information</li>
+        </ul>
+
+        <h3>4. Purposes of Data Processing</h3>
+        <p>Data is processed for the following purposes:</p>
+        <ul>
+          <li>Providing the Pomodoro timer and study tracking service</li>
+          <li>Calculating and visualizing study statistics</li>
+          <li>Generating personalized study recommendations and weekly reports</li>
+          <li>Operating the achievement and badge system</li>
+          <li>Sending local notifications (study reminders, streak protection, etc.)</li>
+          <li>Managing premium subscription operations</li>
+          <li>Displaying advertisements (for non-premium users)</li>
+          <li>Monitoring and improving app performance</li>
+        </ul>
+
+        <h3>5. Legal Basis for Processing</h3>
+
+        <h4>Under GDPR (EU/EEA Users)</h4>
+        <ul>
+          <li><strong>Consent (Art. 6(1)(a))</strong> — for notification permissions, advertising identifiers, and analytics</li>
+          <li><strong>Contract performance (Art. 6(1)(b))</strong> — for providing the app's core services and managing premium subscriptions</li>
+          <li><strong>Legitimate interest (Art. 6(1)(f))</strong> — for monitoring app performance and improving user experience</li>
+        </ul>
+
+        <h4>Under KVKK (Turkish Users)</h4>
+        <ul>
+          <li><strong>Explicit consent (Art. 5/1)</strong> — for notification permissions and advertising identifiers</li>
+          <li><strong>Contract performance (Art. 5/2-c)</strong> — for providing the app's services and managing premium subscriptions</li>
+          <li><strong>Legitimate interest (Art. 5/2-f)</strong> — for monitoring and improving app performance</li>
+        </ul>
+
+        <h3>6. Third-Party Data Sharing</h3>
+        <p>Your data may be shared with the following service providers:</p>
+        <ul>
+          <li><strong>Firebase / Google Cloud (USA)</strong> — anonymous authentication and analytics services</li>
+          <li><strong>Google AdMob (USA)</strong> — used for ad display. Non-personalized ads are used by default (<code>requestNonPersonalizedAdsOnly: true</code>). Personalized ads are shown only with your explicit consent.</li>
+          <li><strong>RevenueCat (USA)</strong> — used for premium subscription management</li>
+          <li><strong>Expo Notification Service</strong> — used for scheduling local notifications</li>
+        </ul>
+
+        <h3>7. International Data Transfers</h3>
+        <p>Some technical services used by the app are provided by service providers located outside the EU/EEA and Turkey. These transfers comply with GDPR Chapter V and KVKK Article 9.</p>
+        <p>Safeguards in place:</p>
+        <ul>
+          <li>Study data is stored locally on your device only; it is not transferred to any server abroad</li>
+          <li>Only an anonymous user ID is transmitted to Firebase</li>
+          <li>Non-personalized ads are used by default</li>
+          <li>All network communication is encrypted via HTTPS/TLS</li>
+          <li>Third-party processors provide Standard Contractual Clauses (SCCs) or equivalent safeguards</li>
+        </ul>
+
+        <h3>8. Data Security Measures</h3>
+        <ul>
+          <li>Study data is stored only on the user's device</li>
+          <li>Only anonymous ID is shared with Firebase</li>
+          <li>Non-personalized ad mode is used by default in the advertising SDK</li>
+          <li>All network communication is protected via HTTPS/TLS</li>
+          <li>The app benefits from standard operating system storage protection mechanisms</li>
+        </ul>
+
+        <h3>9. Data Retention Periods</h3>
+        <ul>
+          <li>Study sessions: until the user clears app data or uninstalls the app (on device)</li>
+          <li>User preferences: until the user clears app data or uninstalls the app (on device)</li>
+          <li>Achievement data: until the user clears app data or uninstalls the app (on device)</li>
+          <li>Anonymous Firebase ID: until the user clears app data or requests deletion</li>
+          <li>Subscription records: for the duration the subscription is active (managed by RevenueCat)</li>
+        </ul>
+
+        <h3>10. Children's Privacy</h3>
+        <p>Lumnos is designed for users aged 13 and older (including exam candidates preparing for secondary school entrance exams). We do not knowingly collect personal data from children under 13. If we become aware that data of a child under 13 has been processed, it will be deleted immediately.</p>
+
+        <h3>11. Advertisements</h3>
+        <p>Lumnos displays advertisements via Google AdMob for non-premium users:</p>
+        <ul>
+          <li>All ads are shown in non-personalized mode by default</li>
+          <li>No ads are shown on the active timer screen</li>
+          <li>Interstitial ads appear only after every 2nd Pomodoro, with a minimum 20-minute interval</li>
+          <li>Rewarded video ads are user-initiated and limited to 5 per day</li>
+          <li>All ads are removed with a Lumnos Pro subscription</li>
+        </ul>
+
+        <h3>12. Your Rights</h3>
+
+        <h4>Under GDPR (EU/EEA Users)</h4>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access your personal data (Art. 15)</li>
+          <li>Rectify inaccurate data (Art. 16)</li>
+          <li>Erase your data — "right to be forgotten" (Art. 17)</li>
+          <li>Restrict processing (Art. 18)</li>
+          <li>Data portability (Art. 20)</li>
+          <li>Object to processing (Art. 21)</li>
+          <li>Withdraw consent at any time (Art. 7(3))</li>
+          <li>Lodge a complaint with a supervisory authority</li>
+        </ul>
+
+        <h4>Under KVKK (Turkish Users — Article 11)</h4>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Learn whether your personal data is being processed</li>
+          <li>Request information about processing if data has been processed</li>
+          <li>Learn the purpose of processing and whether data is used accordingly</li>
+          <li>Know the third parties to whom data is transferred</li>
+          <li>Request rectification of incomplete or inaccurate data</li>
+          <li>Request deletion or destruction of data under KVKK Article 7</li>
+          <li>Request notification of these operations to third parties</li>
+          <li>Object to results arising from automated analysis</li>
+          <li>Claim damages in case of unlawful processing</li>
+        </ul>
+
+        <h3>13. Deleting Your Data</h3>
+        <p>Since your study data is stored locally on your device, uninstalling the app or clearing app data from your device settings will permanently delete all your data.</p>
+        <p>You can also use the in-app account deletion feature (Settings &gt; Delete Account) to erase all data including your Firebase anonymous account.</p>
+        <p>For manual deletion requests, contact us via our <a href="/products/lumnos/support/">support page</a> or email.</p>
+
+        <h3>14. How to Exercise Your Rights</h3>
+        <p>To exercise your rights under GDPR or KVKK, you can contact us via our <a href="/products/lumnos/support/">support page</a> or by emailing <a href="mailto:info@lumnos.app">info@lumnos.app</a>. Requests will be processed within 30 days.</p>
+
+        <h3>15. Policy Changes</h3>
+        <p>This Privacy Policy may be updated from time to time. Significant changes will be communicated through the app.</p>
+
+        <h3>16. Contact</h3>
+        <p>For privacy-related questions:</p>
+        <ul>
+          <li>Email: <a href="mailto:info@lumnos.app">info@lumnos.app</a></li>
+          <li>Support: <a href="/products/lumnos/support/">Support page</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

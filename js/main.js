@@ -63,6 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <a href="/products/">Urunler</a>
           <a href="/products/acikeczane/">AcikEczane</a>
           <a href="/products/sinavkocu/">Sinav Kocu</a>
+          <a href="/products/lumnos/">Lumnos</a>
+          <a href="/products/lumnos/privacy/">Privacy</a>
           <a href="/products/sinavkocu/privacy/">Gizlilik</a>
           <a href="/products/sinavkocu/terms/">Kullanim Sozlesmesi</a>
         </div>
