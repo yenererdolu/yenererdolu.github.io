@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Account — Lumnos — Bugalgo</title>
+  <meta name="description" content="Request deletion of your Lumnos account and all associated data, in-app or via email.">
+  <meta property="og:title" content="Delete Account — Lumnos">
+  <meta property="og:url" content="https://bugalgo.com/products/lumnos/account-delete/">
+  <link rel="canonical" href="https://bugalgo.com/products/lumnos/account-delete/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header id="site-header" class="site-header"></header>
+
+  <section class="section">
+    <div class="container container--narrow">
+      <nav class="breadcrumb">
+        <a href="/">Bugalgo</a> <span>/</span> <a href="/products/">Products</a> <span>/</span> <a href="/products/lumnos/">Lumnos</a> <span>/</span> Delete Account
+      </nav>
+
+      <div class="content-page">
+        <h2>Delete Your Lumnos Account</h2>
+        <p class="date">Last updated: April 29, 2026</p>
+
+        <p>This page explains how to delete your Lumnos account and all associated data. Deletion is available both inside the app and via email — choose whichever works best for you.</p>
+
+        <h3>1. In-App Deletion (Recommended)</h3>
+        <p>The fastest way to delete your account is from inside the app. Open Lumnos and follow these steps:</p>
+        <ol>
+          <li>Tap the <strong>Settings</strong> icon in the top right of the home screen</li>
+          <li>Scroll down to the <strong>Privacy &amp; Data</strong> section</li>
+          <li>Tap <strong>Delete Account</strong></li>
+          <li>Confirm by tapping <strong>Delete</strong> in the dialog</li>
+        </ol>
+        <p>This is immediate — all local data is wiped and your remote Firebase anonymous account is removed.</p>
+
+        <h3>2. Email Request (If You Cannot Access the App)</h3>
+        <p>If you have lost your phone, uninstalled the app, or otherwise cannot use the in-app option, send a deletion request to <a href="mailto:info@lumnos.app?subject=Lumnos%20Account%20Deletion%20Request&amp;body=Hello%2C%0A%0AI%20am%20requesting%20the%20deletion%20of%20my%20Lumnos%20account%20and%20all%20associated%20data.%0A%0ADevice%20type%20%28Android%2FiOS%29%3A%0AApp%20language%3A%0AApproximate%20registration%20date%3A%0AReason%20for%20request%20%28optional%29%3A%0A%0AThank%20you.">info@lumnos.app</a> with the subject line <strong>"Lumnos Account Deletion Request"</strong>.</p>
+        <p>Please include the following information so we can locate and remove your record:</p>
+        <ul>
+          <li>Device type (Android or iOS)</li>
+          <li>App language</li>
+          <li>Approximate registration date (if you remember it)</li>
+          <li>Reason for the request (optional)</li>
+        </ul>
+        <p>You will receive a confirmation reply within 30 days, and your data will be deleted within the same period.</p>
+
+        <h3>3. What Gets Deleted</h3>
+        <p>The following data is permanently removed:</p>
+        <ul>
+          <li><strong>Study sessions</strong> — all entries in the local SQLite database</li>
+          <li><strong>Profile data</strong> — name, exam selection, subjects, daily goals, theme preferences (AsyncStorage)</li>
+          <li><strong>Achievements and progress</strong> — earned badges, streak, study history</li>
+          <li><strong>Weekly study plan</strong> — generated and manually edited plans</li>
+          <li><strong>Notification preferences and scheduled local notifications</strong></li>
+          <li><strong>Firebase anonymous identifier (UID)</strong> — server-side</li>
+          <li><strong>RevenueCat subscription record</strong> — personal identifiers removed; transaction data is retained only as required by tax law (subscription receipts), never linked back to you</li>
+        </ul>
+
+        <h3>4. Processing Time</h3>
+        <p>In-app deletion completes immediately. Requests submitted by email are processed within <strong>30 days</strong> of receipt, in line with GDPR and KVKK requirements.</p>
+
+        <h3>5. Contact</h3>
+        <p>For any questions about the deletion process:</p>
+        <ul>
+          <li>Email: <a href="mailto:info@lumnos.app">info@lumnos.app</a></li>
+          <li>Privacy Policy: <a href="/products/lumnos/privacy/">Read more about how we handle your data</a></li>
+          <li>Support: <a href="/products/lumnos/support/">Frequently asked questions</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
