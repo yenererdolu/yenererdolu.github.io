@@ -1,0 +1,72 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Delete Account — Lumnos — Bugalgo"
+  description="Request deletion of your Lumnos account and all associated data, in-app or via email."
+  ogTitle="Delete Account — Lumnos"
+  canonical="https://bugalgo.com/products/lumnos/account-deletion/"
+>
+  <LegalPage
+    client:load
+    title="Delete Your Lumnos Account"
+    date="Last updated: April 29, 2026"
+    productName="Lumnos"
+    productIconUrl="/images/products/lumnos.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Products", href: "/products/" },
+      { label: "Lumnos", href: "/products/lumnos/" },
+      { label: "Delete Account" },
+    ]}
+  >
+    <p>This page explains how to delete your Lumnos account and all associated data. Deletion is available both inside the app and via email — choose whichever works best for you.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">1. In-App Deletion (Recommended)</h2>
+    <p>The fastest way to delete your account is from inside the app. Open Lumnos and follow these steps:</p>
+    <ol class="list-decimal pl-6 space-y-1 mt-2">
+      <li>Tap the <strong>Settings</strong> icon in the top right of the home screen</li>
+      <li>Scroll down to the <strong>Privacy &amp; Data</strong> section</li>
+      <li>Tap <strong>Delete Account</strong></li>
+      <li>Confirm by tapping <strong>Delete</strong> in the dialog</li>
+    </ol>
+    <p class="mt-2">This is immediate — all local data is wiped and your remote Firebase anonymous account is removed.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">2. Email Request (If You Cannot Access the App)</h2>
+    <p>If you have lost your phone, uninstalled the app, or otherwise cannot use the in-app option, send a deletion request to <a href="mailto:info@lumnos.app?subject=Lumnos%20Account%20Deletion%20Request&body=Hello%2C%0A%0AI%20am%20requesting%20the%20deletion%20of%20my%20Lumnos%20account%20and%20all%20associated%20data.%0A%0ADevice%20type%20%28Android%2FiOS%29%3A%0AApp%20language%3A%0AApproximate%20registration%20date%3A%0AReason%20for%20request%20%28optional%29%3A%0A%0AThank%20you." class="text-primary underline">info@lumnos.app</a> with the subject line <strong>"Lumnos Account Deletion Request"</strong>.</p>
+    <p class="mt-2">Please include the following information so we can locate and remove your record:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Device type (Android or iOS)</li>
+      <li>App language</li>
+      <li>Approximate registration date (if you remember it)</li>
+      <li>Reason for the request (optional)</li>
+    </ul>
+    <p class="mt-2">You will receive a confirmation reply within 30 days, and your data will be deleted within the same period.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">3. What Gets Deleted</h2>
+    <p>The following data is permanently removed:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li><strong>Study sessions</strong> — all entries in the local SQLite database</li>
+      <li><strong>Profile data</strong> — name, exam selection, subjects, daily goals, theme preferences (AsyncStorage)</li>
+      <li><strong>Achievements and progress</strong> — earned badges, streak, study history</li>
+      <li><strong>Weekly study plan</strong> — generated and manually edited plans</li>
+      <li><strong>Notification preferences and scheduled local notifications</strong></li>
+      <li><strong>Firebase anonymous identifier (UID)</strong> — server-side</li>
+      <li><strong>RevenueCat subscription record</strong> — personal identifiers removed; transaction data is retained only as required by tax law (subscription receipts), never linked back to you</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">4. Processing Time</h2>
+    <p>In-app deletion completes immediately. Requests submitted by email are processed within <strong>30 days</strong> of receipt, in line with GDPR and KVKK requirements.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">5. Contact</h2>
+    <p>For any questions about the deletion process:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Email: <a href="mailto:info@lumnos.app" class="text-primary underline">info@lumnos.app</a></li>
+      <li>Privacy Policy: <a href="/products/lumnos/privacy/" class="text-primary underline">Read more about how we handle your data</a></li>
+      <li>Support: <a href="/products/lumnos/support/" class="text-primary underline">Frequently asked questions</a></li>
+    </ul>
+  </LegalPage>
+</Base>

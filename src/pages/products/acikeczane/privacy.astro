@@ -1,0 +1,144 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Gizlilik Politikası — AçıkEczane — Bugalgo"
+  description="AçıkEczane Gizlilik ve KVKK Aydınlatma Metni. Kişisel verilerinizin nasıl korunduğunu öğrenin."
+  ogTitle="Gizlilik Politikası — AçıkEczane"
+  canonical="https://bugalgo.com/products/acikeczane/privacy/"
+>
+  <LegalPage
+    client:load
+    title="Gizlilik ve KVKK Aydınlatma Metni"
+    date="Son güncelleme: 07.03.2026"
+    productName="AçıkEczane"
+    productIconUrl="/images/products/acikeczane.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Ürünler", href: "/products/" },
+      { label: "AçıkEczane", href: "/products/acikeczane/" },
+      { label: "Gizlilik" },
+    ]}
+  >
+    <p>AçıkEczane mobil uygulaması ("Uygulama") olarak kişisel verilerinizin korunmasına büyük önem veriyoruz. Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK")'nun 10. maddesi gereğince hazırlanmış olup hangi verilerin toplandığını, nasıl kullanıldığını ve haklarınızı açıklamaktadır.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">1. Veri Sorumlusu</h2>
+    <p>AçıkEczane uygulamasını geliştiren ve işleten gerçek veya tüzel kişi, KVKK kapsamında veri sorumlusu olarak kabul edilir.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">2. Toplanan Kişisel Veriler</h2>
+    <p><strong>a) Hasta Kullanıcılar (Anonim)</strong></p>
+    <p>Hasta kullanıcılar uygulamayı anonim olarak kullanabilir. Bu kapsamda aşağıdaki veriler işlenebilir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Firebase anonim kimlik (UID) — kullanıcıyı tanımlamak için otomatik oluşturulur</li>
+      <li>Konum bilgisi — yalnızca yakın eczane araması için anlık olarak kullanılır, sunucuda kalıcı olarak saklanmaz</li>
+      <li>Mesaj içerikleri — uçtan uca şifreleme ile korunur</li>
+      <li>Push bildirim token'i — bildirim göndermek amacıyla kullanılır</li>
+    </ul>
+
+    <p class="mt-4"><strong>b) Eczacı Kullanıcılar</strong></p>
+    <p>Eczacı kullanıcıların hesap oluşturması ve eczane doğrulaması için aşağıdaki veriler işlenebilir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Email adresi — kimlik doğrulama amacıyla (Firebase Authentication tarafından saklanır)</li>
+      <li>Ad soyad — profil bilgisi olarak</li>
+      <li>Oda sicil numarası — şifrelenmiş olarak saklanır</li>
+      <li>Eczacı numarası — şifrelenmiş olarak saklanır</li>
+      <li>İletişim telefonu</li>
+      <li>Eczane ruhsat fotoğrafı — eczane sahipliğinin doğrulanması amacıyla</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">3. Verilerin İşlenme Amaçları</h2>
+    <p>Toplanan veriler aşağıdaki amaçlarla işlenir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Nöbetçi eczane bilgilerinin sunulması</li>
+      <li>Hasta ve eczaneler arasında mesajlaşma hizmetinin sağlanması</li>
+      <li>Eczane sahiplik doğrulaması</li>
+      <li>Premium abonelik ve ödeme işlemlerinin yönetimi</li>
+      <li>Bildirim göderimi</li>
+      <li>Uygulamanın güvenliğinin sağlanması</li>
+      <li>Kötüye kullanım ve dolandırıcılığın önlenmesi</li>
+      <li>Yasal yükümlülüklerin yerine getirilmesi</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">4. Kişisel Verilerin İşlenmesinin Hukuki Sebepleri</h2>
+    <p>Kişisel verileriniz KVKK'nin 5. ve 6. maddeleri kapsamında aşağıdaki hukuki sebeplere dayanılarak işlenmektedir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li><strong>Açık rıza (m.5/1, m.6/2)</strong> — Kullanıcılar tarafından paylaşabilecek sağlık içerikleri içeren mesajlaşma hizmetinin sunulması.</li>
+      <li><strong>Sözleşmenin ifası (m.5/2-c)</strong> — Kullanıcı Sözleşmesi kapsamında platform hizmetlerinin sağlanması.</li>
+      <li><strong>Meşru menfaat (m.5/2-f)</strong> — Platform güvenliğinin sağlanması ve kötüye kullanımın önlenmesi.</li>
+      <li><strong>Hukuki yükümlülük (m.5/2-c)</strong> — Yasal düzenlemelere uyum ve gerekli kayıtların tutulması.</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">5. Verilerin Paylaşıldığı Üçüncü Taraflar</h2>
+    <p>Kişisel verileriniz KVKK'nin 8. ve 9. maddeleri kapsamında aşağıdaki hizmet sağlayıcılarla paylaşılabilir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li><strong>Firebase / Google Cloud (ABD)</strong> — Kimlik doğrulama, veritabanı ve dosya depolama hizmetleri</li>
+      <li><strong>Google AdMob</strong> — Hasta kullanıcılara anonim reklam gösterimi için kullanılır. Kişiselleştirilmemiş reklamlar kullanılmaktadır.</li>
+      <li><strong>RevenueCat (ABD)</strong> — Eczacı kullanıcıların abonelik yönetimi için kullanılır.</li>
+      <li><strong>Expo Push Notification Service</strong> — Push bildirimlerinin iletilmesi amacıyla kullanılır.</li>
+      <li><strong>Yetkili kamu kurum ve kuruluşları</strong> — Yasal zorunluluk halinde</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">6. Yurt Dışına Veri Aktarımı</h2>
+    <p>Uygulama kapsamında kullanılan bazı teknik altyapı hizmetleri yurt dışında bulunan servis sağlayıcılar tarafından sunulmaktadır. Bu nedenle kişisel verileriniz, hizmetin sunulabilmesi amacıyla yurt dışında bulunan hizmet sağlayıcılara aktarılabilir. Bu aktarım KVKK'nin 9. maddesine uygun şekilde gerçekleştirilir.</p>
+    <p class="mt-2">Alınan güvenlik önlemleri:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Mesaj içerikleri uçtan uca şifrelenir (TweetNaCl); yurt dışı sunucularda dahi şifreli metin olarak saklanır</li>
+      <li>Eczacı sicil ve kimlik numaraları şifrelenmiş olarak saklanır</li>
+      <li>Email adresi Firestore veritabanında tutulmaz, yalnızca Firebase Authentication hizmetinde saklanır</li>
+      <li>Hasta konum bilgisi sunuculara iletilmez ve kalıcı olarak saklanmaz</li>
+      <li>Reçete fotoğrafları gönderilmeden önce cihaz üzerinde OCR ile taranır ve kişisel bilgiler otomatik olarak anonimleştirilir</li>
+      <li>Tüm veri iletişimi HTTPS/TLS protokolü ile şifrelenir</li>
+      <li>Reklam gösteriminde kişiselleştirilmemiş reklamlar kullanılır</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">7. Veri Güvenliği Önlemleri</h2>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Mesaj içerikleri uçtan uca şifreleme teknolojisi ile korunur ve platform tarafından okunamaz</li>
+      <li>Eczacı sicil ve kimlik numaraları şifrelenmiş olarak saklanır</li>
+      <li>Email adresleri Firestore veritabanında saklanmaz</li>
+      <li>Hasta konum bilgisi sunucuda kalıcı olarak saklanmaz</li>
+      <li>Tüm veri iletişimi HTTPS/TLS şifreleme ile korunur</li>
+      <li>Reçete fotoğrafları gönderilmeden önce cihazda OCR ile taranarak kişisel bilgiler anonimleştirilir</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">8. Veri Saklama Süreleri</h2>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Mesajlar: Konuşma kullanıcı tarafından silinene kadar (şifreli olarak)</li>
+      <li>Eczacı bilgileri: Hesap aktif olduğu sürece</li>
+      <li>Hasta anonim kimliği: Kullanıcı uygulama verilerini silene kadar</li>
+      <li>Onay kayıtları: Yasal yükümlülüklerin gerektirdiği süre boyunca</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">9. Çocukların Gizliliği</h2>
+    <p>Uygulama 18 yaşının altındaki bireylere yönelik değildir. Bilerek 18 yaş altı kullanıcılardan kişisel veri toplanmaz.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">10. Çerezler ve İzleme Teknolojileri</h2>
+    <p>Mobil uygulama doğrudan çerez kullanmaz. Ancak Google AdMob gibi üçüncü taraf hizmetler reklam performansını ölçmek amacıyla anonim tanımlayıcılar kullanabilir.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">11. Kullanıcı Hakları (KVKK Madde 11)</h2>
+    <p>KVKK'nin 11. maddesi uyarınca veri sahipleri aşağıdaki haklara sahiptir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Kişisel verilerinin işlenip işlenmediğini öğrenme</li>
+      <li>Kişisel verileri işlenmişse buna ilişkin bilgi talep etme</li>
+      <li>İşleme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme</li>
+      <li>Verilerin aktarıldığı üçüncü kişileri bilme</li>
+      <li>Eksik veya yanlış verilerin düzeltilmesini isteme</li>
+      <li>KVKK'nin 7. maddesi kapsamında verilerin silinmesini veya yok edilmesini isteme</li>
+      <li>Bu işlemlerin üçüncü kişilere bildirilmesini isteme</li>
+      <li>Otomatik sistemler sonucu ortaya çıkan aleyhte sonuçlara itiraz etme</li>
+      <li>Kanuna aykırı işleme nedeniyle zararın giderilmesini talep etme</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">12. Başvuru Yöntemi</h2>
+    <p>KVKK kapsamındaki haklarınızı kullanmak için uygulama içi destek kanalı veya <a href="/products/acikeczane/support/" class="text-primary underline">destek sayfamız</a> üzerinden başvurabilirsiniz. Başvurularınız en geç 30 gün içinde sonuçlandırılacaktır.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">13. Politika Değişiklikleri</h2>
+    <p>Bu metin zaman zaman güncellenebilir. Önemli değişiklikler uygulama üzerinden bildirilir ve gerekli durumlarda kullanıcılardan yeniden onay istenir.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">14. İletişim</h2>
+    <p>Gizlilik ile ilgili sorularınız için <a href="/products/acikeczane/support/" class="text-primary underline">destek sayfamızı</a> ziyaret edebilirsiniz.</p>
+  </LegalPage>
+</Base>

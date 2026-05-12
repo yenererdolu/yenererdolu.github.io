@@ -1,0 +1,95 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Kullanım Sözleşmesi — Sınav Koçu — Bugalgo"
+  description="Sınav Koçu Kullanıcı Sözleşmesi. Uygulamanın kullanım koşullarını inceleyin."
+  ogTitle="Kullanım Sözleşmesi — Sınav Koçu"
+  canonical="https://bugalgo.com/products/sinavkocu/terms/"
+>
+  <LegalPage
+    client:load
+    title="Kullanıcı Sözleşmesi"
+    date="Son güncelleme: 02.04.2026"
+    productName="Sınav Koçu"
+    productIconUrl="/images/products/sinavkocu.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Ürünler", href: "/products/" },
+      { label: "Sınav Koçu", href: "/products/sinavkocu/" },
+      { label: "Kullanım Sözleşmesi" },
+    ]}
+  >
+    <p>Bu Kullanıcı Sözleşmesi ("Sözleşme"), Sınav Koçu mobil uygulamasının ("Uygulama") kullanım koşullarını düzenler. Uygulamayı kullanarak bu Sözleşme'nin tüm hükümlerini kabul etmiş sayılırsınız.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">1. Tanımlar</h2>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li><strong>"Platform Sahibi":</strong> Sınav Koçu uygulamasını geliştiren ve işleten gerçek/tüzel kişi (Bugalgo).</li>
+      <li><strong>"Kullanıcı":</strong> Uygulamayı kullanan sınav adayı veya öğrenci.</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">2. Hizmetin Kapsamı</h2>
+    <p>Uygulama aşağıdaki hizmetleri sunar:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Pomodoro tekniğine dayalı çalışma zamanlayıcısı</li>
+      <li>Ders bazlı çalışma süresi takibi ve kaydı</li>
+      <li>Çalışma istatistikleri, grafikler ve haftalık raporlar</li>
+      <li>Sınav türüne göre kişiselleştirilmiş çalışma planları ve önerileri</li>
+      <li>Sınav tarihi geri sayımı</li>
+      <li>Başarım ve rozet sistemi</li>
+      <li>Akıllı bildirim sistemi (çalışma hatırlatmaları, seri koruma vb.)</li>
+    </ul>
+    <p class="mt-2">Uygulama bir eğitim kurumu değildir ve akademik danışmanlık hizmeti vermez.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">3. Hesap ve Kayıt</h2>
+    <p>Kullanıcılar uygulamayı anonim olarak kullanabilir. Kayıt veya e-posta adresi gerektirmez. Uygulama, Firebase anonim kimlik doğrulama ile çalışır.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">4. Kullanıcı Yükümlülükleri</h2>
+    <p>Kullanıcılar:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Uygulamayı yasalara ve bu Sözleşme'ye uygun şekilde kullanmayı,</li>
+      <li>Uygulamanın teknik altyapısına müdahale etmemeyi,</li>
+      <li>Uygulamayı tersine mühendislik, decompile veya kaynak kod çıkarma amaçlı kullanmamayı,</li>
+      <li>Uygulama içeriğini izinsiz kopyalamamayı veya dağıtmamayı</li>
+    </ul>
+    <p>kabul ve taahhüt eder.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">5. Premium Abonelik</h2>
+    <p>Uygulama, opsiyonel bir premium abonelik sunar:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Premium abonelik Google Play üzerinden yönetilir</li>
+      <li>Abonelik, iptal edilmediği sürece otomatik olarak yenilenir</li>
+      <li>İptal işlemi Google Play ayarlarından yapılabilir</li>
+      <li>Premium özellikler: reklamsız deneyim ve gelişmiş analizler</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">6. Reklamlar</h2>
+    <p>Premium olmayan kullanıcılar için uygulama içerisinde Google AdMob aracılığıyla reklam gösterilebilir. Reklamlar kişiselleştirilmemiş modda sunulur.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">7. Fikri Mülkiyet</h2>
+    <p>Uygulama ve içeriğindeki tüm fikri mülkiyet hakları Platform Sahibi'ne aittir. Kullanıcılar, uygulamanın hiçbir kısmını kopyalayamaz, dağıtamaz veya ticari amaçla kullanamaz.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">8. Veri ve Gizlilik</h2>
+    <p>Kullanıcı verilerinin işlenmesine ilişkin detaylı bilgi için <a href="/products/sinavkocu/privacy/" class="text-primary underline">Gizlilik Politikası</a> sayfamızı inceleyiniz. Çalışma verileri yalnızca kullanıcının cihazında saklanır.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">9. Sorumluluk Sınırlaması</h2>
+    <p>Uygulama "olduğu gibi" sunulmaktadır. Platform Sahibi:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Uygulamanın kesintisiz veya hatasız çalışacağını garanti etmez</li>
+      <li>Cihazda saklanan verilerin kaybı durumunda sorumluluk kabul etmez</li>
+      <li>Kullanıcının sınav sonuçları veya akademik başarısı ile ilgili garanti vermez</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">10. Hesap Askıya Alma ve Fesih</h2>
+    <p>Platform Sahibi, bu Sözleşme'yi ihlal eden kullanıcıların erişimini kısıtlama hakkını saklı tutar.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">11. Uyuşmazlık Çözümü</h2>
+    <p>Bu Sözleşme Türkiye Cumhuriyeti kanunlarına tabidir. Uyuşmazlıklarda İstanbul Mahkemeleri ve İcra Daireleri yetkilidir.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">12. Değişiklikler</h2>
+    <p>Platform Sahibi, bu Sözleşme'yi önceden bildirimde bulunarak değiştirme hakkını saklı tutar. Önemli değişikliklerde kullanıcılar uygulama üzerinden bilgilendirilecektir.</p>
+  </LegalPage>
+</Base>

@@ -1,0 +1,14 @@
+---
+import Base from "@/layouts/Base.astro";
+import { ProductsPage } from "@/components/site/ProductsPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Ürünlerimiz — Bugalgo"
+  description="Bugalgo'nun geliştirdiği mobil uygulamalar: AçıkEczane, Sınav Koçu ve Lumnos."
+  ogTitle="Ürünlerimiz — Bugalgo"
+  ogDescription="AçıkEczane, Sınav Koçu, Lumnos. App Store ve Google Play'de yayında."
+>
+  <ProductsPage client:load />
+</Base>

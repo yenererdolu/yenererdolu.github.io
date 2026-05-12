@@ -1,0 +1,14 @@
+---
+import Base from "@/layouts/Base.astro";
+import { HomePage } from "@/components/site/HomePage";
+import "@/styles.css";
+---
+
+<Base
+  title="Bugalgo — Modern mobil ve web uygulamaları"
+  description="Bugalgo, gizliliği ön planda tutan, kullanıcı odaklı mobil ve web uygulamaları geliştiriyor. AçıkEczane, Sınav Koçu, Lumnos."
+  ogTitle="Bugalgo — Modern mobil ve web uygulamaları"
+  ogDescription="Gizliliği ön planda tutan, kullanıcı odaklı mobil ve web uygulamaları. App Store ve Google Play'de yayında."
+>
+  <HomePage client:load />
+</Base>

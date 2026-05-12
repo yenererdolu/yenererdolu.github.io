@@ -1,0 +1,13 @@
+---
+import Base from "@/layouts/Base.astro";
+import { ContactPage } from "@/components/site/ContactPage";
+import "@/styles.css";
+---
+
+<Base
+  title="İletişim — Bugalgo"
+  description="Bugalgo ile iletişime geçin. Sorularınız ve iş birlikleri için bize ulaşın."
+  ogTitle="İletişim — Bugalgo"
+>
+  <ContactPage client:load />
+</Base>

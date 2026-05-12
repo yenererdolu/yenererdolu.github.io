@@ -1,0 +1,149 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Gizlilik Politikası — Sınav Koçu — Bugalgo"
+  description="Sınav Koçu Gizlilik ve KVKK Aydınlatma Metni. Kişisel verilerinizin nasıl korunduğunu öğrenin."
+  ogTitle="Gizlilik Politikası — Sınav Koçu"
+  canonical="https://bugalgo.com/products/sinavkocu/privacy/"
+>
+  <LegalPage
+    client:load
+    title="Gizlilik ve KVKK Aydınlatma Metni"
+    date="Son güncelleme: 02.04.2026"
+    productName="Sınav Koçu"
+    productIconUrl="/images/products/sinavkocu.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Ürünler", href: "/products/" },
+      { label: "Sınav Koçu", href: "/products/sinavkocu/" },
+      { label: "Gizlilik" },
+    ]}
+  >
+    <p>Sınav Koçu mobil uygulaması ("Uygulama") olarak kişisel verilerinizin korunmasına büyük önem veriyoruz. Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK")'nun 10. maddesi gereğince hazırlanmış olup hangi verilerin toplandığını, nasıl kullanıldığını ve haklarınızı açıklamaktadır.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">1. Veri Sorumlusu</h2>
+    <p>Sınav Koçu uygulamasını geliştiren ve işleten gerçek veya tüzel kişi, KVKK kapsamında veri sorumlusu olarak kabul edilir.</p>
+    <p class="mt-1"><strong>İletişim:</strong> <a href="/products/sinavkocu/support/" class="text-primary underline">Destek sayfası</a></p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">2. Toplanan Kişisel Veriler</h2>
+    <p>Sınav Koçu, kullanıcı gizliliğini ön planda tutarak minimum veri toplama ilkesiyle çalışır. Kullanıcılar uygulamayı anonim olarak kullanabilir.</p>
+    <p class="mt-2">Aşağıdaki veriler işlenebilir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li><strong>Firebase anonim kimlik (UID)</strong> — kullanıcıyı tanımlamak için otomatik oluşturulur, gerçek kimlik bilgisi içermez</li>
+      <li><strong>Çalışma oturum verileri</strong> — ders adı, çalışma süresi, tarih (yalnızca cihazda yerel olarak SQLite veritabanında saklanır)</li>
+      <li><strong>Kullanıcı tercihleri</strong> — sınav türü, günlük hedef, pomodoro ayarları, bildirim tercihleri (yalnızca cihazda AsyncStorage'da saklanır)</li>
+      <li><strong>Başarım verileri</strong> — kazanılan rozetler ve ilerleme (yalnızca cihazda saklanır)</li>
+      <li><strong>Push bildirim token'i</strong> — yerel bildirim göndermek amacıyla kullanılır</li>
+      <li><strong>Cihaz tanımlayıcıları</strong> — reklam gösterimi ve analitik amacıyla üçüncü taraf SDK'ları tarafından toplanabilir</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">3. Verilerin Saklanma Yeri</h2>
+    <p><strong>Önemli:</strong> Sınav Koçu, çalışma verilerinizi (oturumlar, istatistikler, başarımlar, tercihler) yalnızca cihazınızda yerel olarak saklar. Bu veriler hiçbir sunucuya gönderilmez.</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li><strong>SQLite veritabanı (cihazda)</strong> — çalışma oturumları, ders bazlı istatistikler</li>
+      <li><strong>AsyncStorage (cihazda)</strong> — kullanıcı profili, ayarlar, başarımlar, bildirim tercihleri</li>
+      <li><strong>Firebase Authentication (bulut)</strong> — yalnızca anonim kimlik (UID), gerçek kimlik bilgisi içermez</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">4. Verilerin İşlenme Amaçları</h2>
+    <p>Toplanan veriler aşağıdaki amaçlarla işlenir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Pomodoro zamanlayıcı ve çalışma takibi hizmetinin sağlanması</li>
+      <li>Çalışma istatistiklerinin hesaplanması ve görselleştirilmesi</li>
+      <li>Kişiselleştirilmiş çalışma önerileri ve haftalık raporların oluşturulması</li>
+      <li>Başarım ve rozet sisteminin işletilmesi</li>
+      <li>Yerel bildirim gönderimi (çalışma hatırlatmaları, seri koruma vb.)</li>
+      <li>Premium abonelik işlemlerinin yönetimi</li>
+      <li>Reklam gösterimi (premium olmayan kullanıcılar için)</li>
+      <li>Uygulama performansının izlenmesi ve iyileştirilmesi</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">5. Kişisel Verilerin İşlenmesinin Hukuki Sebepleri</h2>
+    <p>Kişisel verileriniz KVKK'nin 5. maddesi kapsamında aşağıdaki hukuki sebeplere dayanılarak işlenmektedir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li><strong>Açık rıza (m.5/1)</strong> — Bildirim izni ve reklam tanımlayıcıları için kullanıcıdan açık rıza alınır.</li>
+      <li><strong>Sözleşmenin ifası (m.5/2-c)</strong> — Uygulama hizmetlerinin sağlanması ve premium abonelik işlemlerinin yürütülmesi.</li>
+      <li><strong>Meşru menfaat (m.5/2-f)</strong> — Uygulama performansının izlenmesi ve iyileştirilmesi.</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">6. Verilerin Paylaşıldığı Üçüncü Taraflar</h2>
+    <p>Kişisel verileriniz KVKK'nin 8. ve 9. maddeleri kapsamında aşağıdaki hizmet sağlayıcılarla paylaşılabilir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li><strong>Firebase / Google Cloud (ABD)</strong> — Anonim kimlik doğrulama ve analitik hizmetleri</li>
+      <li><strong>Google AdMob (ABD)</strong> — Reklam gösterimi için kullanılır. Kişiselleştirilmemiş reklamlar kullanılmaktadır (<code>requestNonPersonalizedAdsOnly: true</code>).</li>
+      <li><strong>RevenueCat (ABD)</strong> — Premium abonelik yönetimi için kullanılır.</li>
+      <li><strong>Expo Notification Service</strong> — Yerel bildirimlerin planlanması amacıyla kullanılır.</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">7. Yurt Dışına Veri Aktarımı</h2>
+    <p>Uygulama kapsamında kullanılan bazı teknik altyapı hizmetleri yurt dışında bulunan servis sağlayıcılar tarafından sunulmaktadır. Bu aktarım KVKK'nin 9. maddesine uygun şekilde gerçekleştirilir.</p>
+    <p class="mt-2">Alınan güvenlik önlemleri:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Çalışma verileri yalnızca cihazda saklanır, yurt dışı sunuculara aktarılmaz</li>
+      <li>Firebase'e yalnızca anonim kullanıcı kimliği iletilir</li>
+      <li>Reklam gösteriminde kişiselleştirilmemiş reklamlar kullanılır</li>
+      <li>Tüm veri iletişimi HTTPS/TLS protokolü ile şifrelenir</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">8. Veri Güvenliği Önlemleri</h2>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Çalışma verileri yalnızca kullanıcının cihazında saklanır</li>
+      <li>Firebase ile yalnızca anonim kimlik paylaşımı yapılır</li>
+      <li>Reklam SDK'sında kişiselleştirilmemiş mod kullanılır</li>
+      <li>Tüm ağ iletişimi HTTPS/TLS ile korunur</li>
+      <li>Uygulama, cihaz depolama alanında standart işletim sistemi koruma mekanizmalarından yararlanır</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">9. Veri Saklama Süreleri</h2>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Çalışma oturumları: Kullanıcı uygulama verilerini silene kadar (cihazda)</li>
+      <li>Kullanıcı tercihleri: Kullanıcı uygulama verilerini silene kadar (cihazda)</li>
+      <li>Başarım verileri: Kullanıcı uygulama verilerini silene kadar (cihazda)</li>
+      <li>Anonim Firebase kimliği: Kullanıcı uygulama verilerini silene kadar</li>
+      <li>Abonelik kayıtları: Abonelik aktif olduğu sürece (RevenueCat tarafından)</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">10. Çocukların Gizliliği</h2>
+    <p>Sınav Koçu, 13 yaş ve üzeri kullanıcılar için tasarlanmıştır (LGS adayları dahil). 13 yaşından küçük çocuklardan bilerek kişisel veri toplanmaz. 13 yaş altı bir kullanıcının verilerini işlediğimizi farkede rsek, bu veriler derhal silinecektir.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">11. Reklamlar</h2>
+    <p>Sınav Koçu, premium olmayan kullanıcılar için Google AdMob aracılığıyla reklam gösterir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Tüm reklamlar kişiselleştirilmemiş modda gösterilir</li>
+      <li>Aktif çalışma (zamanlayıcı) ekranında reklam gösterilmez</li>
+      <li>Ara reklam (interstitial) yalnızca her 2. pomodoro sonrası, minimum 20 dakika aralıkla gösterilir</li>
+      <li>Ödüllü video reklamlar kullanıcı tarafından gönüllü olarak izlenir (günlük maksimum 5)</li>
+      <li>Premium abonelik ile tüm reklamlar kaldırılır</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">12. Kullanıcı Hakları (KVKK Madde 11)</h2>
+    <p>KVKK'nin 11. maddesi uyarınca veri sahipleri aşağıdaki haklara sahiptir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Kişisel verilerinin işlenip işlenmediğini öğrenme</li>
+      <li>Kişisel verileri işlenmişse buna ilişkin bilgi talep etme</li>
+      <li>İşleme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme</li>
+      <li>Verilerin aktarıldığı üçüncü kişileri bilme</li>
+      <li>Eksik veya yanlış verilerin düzeltilmesini isteme</li>
+      <li>KVKK'nin 7. maddesi kapsamında verilerin silinmesini veya yok edilmesini isteme</li>
+      <li>Bu işlemlerin üçüncü kişilere bildirilmesini isteme</li>
+      <li>Otomatik sistemler sonucu ortaya çıkan aleyhte sonuçlara itiraz etme</li>
+      <li>Kanuna aykırı işleme nedeniyle zararın giderilmesini talep etme</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">13. Verilerinizi Silme</h2>
+    <p>Çalışma verileriniz cihazınızda yerel olarak saklandığı için, uygulamayı sildiğinizde veya cihaz ayarlarından uygulama verilerini temizlediğinizde tüm verileriniz kalıcı olarak silinir. Firebase anonim hesabınızın silinmesi için <a href="/products/sinavkocu/support/" class="text-primary underline">destek sayfamız</a> üzerinden başvurabilirsiniz.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">14. Başvuru Yöntemi</h2>
+    <p>KVKK kapsamındaki haklarınızı kullanmak için <a href="/products/sinavkocu/support/" class="text-primary underline">destek sayfamız</a> üzerinden başvurabilirsiniz. Başvurularınız en geç 30 gün içinde sonuçlandırılacaktır.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">15. Politika Değişiklikleri</h2>
+    <p>Bu metin zaman zaman güncellenebilir. Önemli değişiklikler uygulama üzerinden bildirilir.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">16. İletişim</h2>
+    <p>Gizlilik ile ilgili sorularınız için <a href="/products/sinavkocu/support/" class="text-primary underline">destek sayfamız</a> üzerinden bize ulaşabilirsiniz.</p>
+  </LegalPage>
+</Base>

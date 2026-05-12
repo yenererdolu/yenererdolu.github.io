@@ -1,0 +1,59 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Destek — AçıkEczane — Bugalgo"
+  description="AçıkEczane uygulaması ile ilgili sıkça sorulan sorular ve destek bilgileri."
+  ogTitle="Destek — AçıkEczane"
+  canonical="https://bugalgo.com/products/acikeczane/support/"
+>
+  <LegalPage
+    client:load
+    title="Destek & SSS"
+    productName="AçıkEczane"
+    productIconUrl="/images/products/acikeczane.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Ürünler", href: "/products/" },
+      { label: "AçıkEczane", href: "/products/acikeczane/" },
+      { label: "Destek" },
+    ]}
+  >
+    <p class="text-muted-foreground mb-6">AçıkEczane uygulamasıyla ilgili sorularınız için aşağıdaki bilgileri inceleyebilirsiniz.</p>
+
+    <div class="space-y-3">
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Uygulama nasıl çalışır?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">AçıkEczane, bulunduğunuz konuma en yakın nöbetçi eczaneleri harita ve liste görünümünde gösterir. Eczanelerle uçtan uca şifreli mesajlaşma ile güvenli iletişim kurabilirsiniz.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Hesap oluşturmam gerekiyor mu?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Hayır. Hasta kullanıcılar uygulamayı anonim olarak kullanabilir. Mesajlaşma için yasal metinlerin onaylanması yeterlidir. Eczacılar ise email ile kayıt olmalıdır.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Mesajlarım güvenli mi?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Evet. Tüm mesajlar uçtan uca şifreleme (TweetNaCl) ile korunur. Platform dahil hiçbir üçüncü taraf mesaj içeriğini okuyamaz.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Reçete fotoğrafımı nasıl paylaşabilirim?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Reçete fotoğrafınız gönderilmeden önce cihazınızda OCR ile taranır ve kişisel bilgileriniz (TC kimlik no, ad soyad vb.) otomatik olarak anonimleştirilir.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Hesabımı nasıl silerim?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Uygulama içindeki Ayarlar ekranından "Hesabımı Sil" seçeneğini kullanarak hesabınızı ve tüm verilerinizi kalıcı olarak silebilirsiniz.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Premium abonelik nedir?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Premium abonelik yalnızca eczacı kullanıcılar içindir. Öncelikli listeleme ve ek özellikler sunar. Hasta kullanıcılar için uygulama tamamen ücretsizdir.</p>
+      </details>
+    </div>
+  </LegalPage>
+</Base>

@@ -1,0 +1,94 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Kullanım Sözleşmesi — AçıkEczane — Bugalgo"
+  description="AçıkEczane Kullanıcı Sözleşmesi. Uygulamanın kullanım koşullarını inceleyin."
+  ogTitle="Kullanım Sözleşmesi — AçıkEczane"
+  canonical="https://bugalgo.com/products/acikeczane/terms/"
+>
+  <LegalPage
+    client:load
+    title="Kullanıcı Sözleşmesi"
+    date="Son güncelleme: 07.03.2026"
+    productName="AçıkEczane"
+    productIconUrl="/images/products/acikeczane.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Ürünler", href: "/products/" },
+      { label: "AçıkEczane", href: "/products/acikeczane/" },
+      { label: "Kullanım Sözleşmesi" },
+    ]}
+  >
+    <p>Bu Kullanıcı Sözleşmesi ("Sözleşme"), AçıkEczane mobil uygulamasının ("Uygulama") kullanım koşullarını düzenler. Uygulamayı kullanarak bu Sözleşme'nin tüm hükümlerini kabul etmiş sayılırsınız.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">1. Tanımlar</h2>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li><strong>"Platform Sahibi":</strong> AçıkEczane uygulamasını geliştiren ve işleten gerçek/tüzel kişi.</li>
+      <li><strong>"Kullanıcı":</strong> Uygulamayı kullanan hasta veya eczacı.</li>
+      <li><strong>"Hasta":</strong> Uygulamayı eczane bilgilerine erişmek ve eczanelerle iletişim kurmak amacıyla kullanan kişi.</li>
+      <li><strong>"Eczacı":</strong> Uygulamaya kayıt olarak eczanesini tanıtan ve hastalarla iletişim kuran meslek mensubu.</li>
+    </ul>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">2. Hizmetin Kapsamı</h2>
+    <p>Uygulama aşağıdaki hizmetleri sunar:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Nöbetçi eczane bilgilerine erişim (konum bazlı)</li>
+      <li>Hastalar ile eczaneler arasında uçtan uca şifreli mesajlaşma</li>
+      <li>Eczane sahipliği doğrulama ve yönetimi</li>
+      <li>Eczaneler için premium abonelik hizmetleri</li>
+    </ul>
+    <p class="mt-2">Uygulama bir sağlık hizmeti sağlayıcısı değildir ve tıbbi tavsiye vermez.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">3. Hesap ve Kayıt</h2>
+    <p>Hastalar uygulamayı anonim olarak kullanabilir. Mesajlaşma özelliğini kullanmak için yasal metinlerin onaylanması gerekir.</p>
+    <p class="mt-2">Eczacılar, email ve şifre ile kayıt olmalı ve eczane sahipliğini belgeleyerek doğrulatmalıdır.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">4. Kullanıcı Yükümlülükleri</h2>
+    <p>Kullanıcılar:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Uygulamayı yasalara ve bu Sözleşme'ye uygun şekilde kullanmayı,</li>
+      <li>Yanıltıcı, sahte veya başkasına ait bilgi vermemeyi,</li>
+      <li>Mesajlaşma özelliğini yalnızca eczane hizmetleriyle ilgili iletişim için kullanmayı,</li>
+      <li>Hakaret, tehdit, spam veya yasadışı içerik paylaşmamayı,</li>
+      <li>Başka kullanıcıların kişisel verilerini izinsiz toplamaya veya paylaşmaya çalışmamayı</li>
+    </ul>
+    <p>kabul ve taahhüt eder.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">5. Eczacı Özel Yükümlülükleri</h2>
+    <p>Eczacılar ek olarak:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Gerçek eczane ruhsatı ve mesleki bilgileriyle kayıt olmayı,</li>
+      <li>Mesleki etik kurallara uygun davranmayı,</li>
+      <li>Uygulama üzerinden reçetesiz ilaç satışı veya yasadışı ilaç önerisi yapmamayı</li>
+    </ul>
+    <p>kabul eder.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">6. Fikri Mülkiyet</h2>
+    <p>Uygulama ve içeriğindeki tüm fikri mülkiyet hakları Platform Sahibi'ne aittir. Kullanıcılar, uygulamanın hiçbir kısmını kopyalayamaz, dağıtamaz veya ticari amaçla kullanamaz.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">7. Hesap Askıya Alma ve Fesih</h2>
+    <p>Platform Sahibi, bu Sözleşme'yi ihlal eden kullanıcıların hesaplarını önceden bildirimde bulunmaksızın askıya alabilir veya kapatabilir. Kullanıcılar hesaplarını istedikleri zaman silme talebinde bulunabilir.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">8. Sorumluluk Sınırlaması</h2>
+    <p>Uygulama "olduğu gibi" sunulmaktadır. Platform Sahibi, uygulamanın kesintisiz veya hatasız çalışacağını garanti etmez.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">9. Uyuşmazlık Çözümü</h2>
+    <p>Bu Sözleşme Türkiye Cumhuriyeti kanunlarına tabidir. Uyuşmazlıklarda İstanbul Mahkemeleri ve İcra Daireleri yetkilidir.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">10. Değişiklikler</h2>
+    <p>Platform Sahibi, bu Sözleşme'yi önceden bildirimde bulunarak değiştirme hakkını saklı tutar. Önemli değişikliklerde kullanıcılardan yeniden onay istenecektir.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">11. Sağlık Sorumluluk Reddi</h2>
+    <p>AçıkEczane uygulaması, kullanıcıların nöbetçi eczane bilgilerine erişmesini ve eczanelerle iletişim kurmasını kolaylaştırmak amacıyla sunulan bir platformdur. Uygulama herhangi bir sağlık hizmeti sağlayıcısı değildir ve sağlık hizmeti sunmaz.</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li>Bu uygulama üzerinden sağlanan hiçbir bilgi tıbbi teşhis, tedavi önerisi veya doktor/eczacı muayenesi yerine geçmez.</li>
+      <li>Acil sağlık durumlarında 112 Acil Yardım hattını arayınız.</li>
+      <li>Uygulama üzerinden edindiğiniz herhangi bir bilgiye dayanarak ilaç kullanımınızı değiştirmeyiniz.</li>
+      <li>AçıkEczane, kullanıcılar ile eczaneler arasında iletişim kurulmasını sağlayan bir aracı platformdur. Herhangi bir ilaç satışı gerçekleştirmez.</li>
+    </ul>
+  </LegalPage>
+</Base>

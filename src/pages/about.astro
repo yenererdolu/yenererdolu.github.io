@@ -1,0 +1,13 @@
+---
+import Base from "@/layouts/Base.astro";
+import { AboutPage } from "@/components/site/AboutPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Hakkımızda — Bugalgo"
+  description="Bugalgo, sağlık ve günlük yaşam alanında yenilikçi mobil uygulamalar geliştiren İstanbul merkezli bir teknoloji girişimidir."
+  ogTitle="Hakkımızda — Bugalgo"
+>
+  <AboutPage client:load />
+</Base>

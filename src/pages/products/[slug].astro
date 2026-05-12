@@ -1,0 +1,34 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "@/layouts/Base.astro";
+import { ProductDetailPage } from "@/components/site/ProductDetailPage";
+import type { ProductSlug } from "@/lib/products";
+import "@/styles.css";
+
+export const getStaticPaths = (() => {
+  const slugs: ProductSlug[] = ["acikeczane", "sinavkocu", "lumnos"];
+  return slugs.map((slug) => ({ params: { slug } }));
+}) satisfies GetStaticPaths;
+
+const { slug } = Astro.params as { slug: ProductSlug };
+
+const titles: Record<ProductSlug, string> = {
+  acikeczane: "AçıkEczane — Bugalgo",
+  sinavkocu: "Sınav Koçu — Bugalgo",
+  lumnos: "Lumnos — Bugalgo",
+};
+
+const descriptions: Record<ProductSlug, string> = {
+  acikeczane: "Nöbetçi eczane bilgilerine anında ulaşın, eczanelerle uçtan uca şifreli mesajlaşma ile güvenle iletişim kurun.",
+  sinavkocu: "YKS, LGS, KPSS, ALES, DGS için akıllı pomodoro çalışma takibi. Ders bazlı istatistikler ve başarım sistemi.",
+  lumnos: "Smart Pomodoro study tracker for exam candidates worldwide. Detailed statistics, study plans, and achievement system.",
+};
+---
+
+<Base
+  title={titles[slug]}
+  description={descriptions[slug]}
+  ogTitle={titles[slug]}
+>
+  <ProductDetailPage slug={slug} client:load />
+</Base>

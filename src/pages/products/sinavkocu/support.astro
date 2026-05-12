@@ -1,0 +1,74 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Destek — Sınav Koçu — Bugalgo"
+  description="Sınav Koçu uygulaması ile ilgili sıkça sorulan sorular ve destek bilgileri."
+  ogTitle="Destek — Sınav Koçu"
+  canonical="https://bugalgo.com/products/sinavkocu/support/"
+>
+  <LegalPage
+    client:load
+    title="Destek & SSS"
+    productName="Sınav Koçu"
+    productIconUrl="/images/products/sinavkocu.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Ürünler", href: "/products/" },
+      { label: "Sınav Koçu", href: "/products/sinavkocu/" },
+      { label: "Destek" },
+    ]}
+  >
+    <p class="text-muted-foreground mb-6">Sınav Koçu uygulamasıyla ilgili sorularınız için aşağıdaki bilgileri inceleyebilirsiniz.</p>
+
+    <div class="space-y-3">
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Sınav Koçu nasıl çalışır?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Sınav Koçu, pomodoro tekniğini kullanarak çalışmalarınızı takip eder. Sınav türünüze göre derslerinizi seçin, zamanlayıcıyı başlatın ve çalışma sürelerinizi otomatik olarak kaydedin. Detaylı istatistikler ve grafiklerle ilerlemenizi izleyin.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Hesap oluşturmam gerekiyor mu?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Hayır. Sınav Koçu anonim olarak çalışır, hiçbir kişisel bilgi girmeniz gerekmez. İsim girişi opsiyoneldir ve yalnızca cihazınızda saklanır.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Verilerim nerede saklanır?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Tüm çalışma verileriniz (oturumlar, istatistikler, başarımlar) yalnızca cihazınızda yerel olarak saklanır. Hiçbir sunucuya gönderilmez. Bu nedenle uygulamayı sildiğinizde verileriniz de silinir.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Hangi sınavlar destekleniyor?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">YKS (Sayısal, Sözel, Eşit Ağırlık, Türk-Mat), LGS, KPSS, ALES ve DGS sınavları desteklenmektedir. Ayrıca "Diğer" seçeneği ile kendi derslerinizi ekleyerek herhangi bir sınava hazırlanabilirsiniz.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Zamanlayıcı arka planda çalışıyor mu?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Evet. Zamanlayıcı arka planda çalışmaya devam eder. Çalışma süresi dolduğunda bildirim alırsınız. Uygulamaya döndüğünüzde kalan süre doğru şekilde güncellenir.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Premium abonelik ne sağlar?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Premium abonelik reklamsız bir deneyim ve gelişmiş analiz özellikleri sunar. Temel özellikler (zamanlayıcı, istatistikler, bildirimler) tüm kullanıcılar için ücretsizdir.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Aboneliğimi nasıl iptal edebilirim?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Aboneliğiniz Google Play üzerinden yönetilir. Google Play &gt; Abonelikler bölümünden Sınav Koçu aboneliğinizi iptal edebilirsiniz.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Verilerimi nasıl silebilirim?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Cihazınızın Ayarlar &gt; Uygulamalar &gt; Sınav Koçu &gt; Veriyi Temizle seçeneğiyle veya uygulamayı kaldırarak tüm verilerinizi silebilirsiniz.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Bildirimleri nasıl kapatırım?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Uygulama içerisindeki Ayarlar ekranından bildirim tercihlerinizi yönetebilirsiniz. Ayrıca sessiz saat ayarı ile belirli saatlerde bildirim almamayı tercih edebilirsiniz.</p>
+      </details>
+    </div>
+  </LegalPage>
+</Base>
