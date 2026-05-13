@@ -35,7 +35,7 @@ export const STORE_URLS: Record<ProductSlug, { ios?: string; android?: string }>
   },
   sinavkocu: {
     ios: "https://apps.apple.com/tr/app/s%C4%B1nav-ko%C3%A7u-pomodoro-timer/id6761717241",
-    android: "https://play.google.com/store/apps/details?id=com.yenererdolu.sinavkocu",
+    android: "https://play.google.com/store/apps/details?id=com.bugalgo.sinavkocu",
   },
   lumnos: {
     android: "https://play.google.com/store/apps/details?id=com.bugalgo.lumnos",
