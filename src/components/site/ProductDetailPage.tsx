@@ -4,6 +4,8 @@ import { getProductMeta, PRODUCTS, type ProductSlug } from "@/lib/products";
 import { StoreBadges } from "@/components/site/StoreBadges";
 import { ProductCard } from "@/components/site/ProductCard";
 import { AppShell } from "@/components/site/AppShell";
+import { ScreenshotGallery } from "@/components/site/ScreenshotGallery";
+import { YoutubeVideo } from "@/components/site/YoutubeVideo";
 
 type Props = {
   slug: ProductSlug;
@@ -84,6 +86,31 @@ function ProductDetailContent({ slug }: Props) {
             ))}
           </ul>
         </div>
+
+        {meta.youtubeVideoId && (
+          <div className="mt-20">
+            <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground">
+              {t.common.demoVideo}
+            </h2>
+            <YoutubeVideo
+              videoId={meta.youtubeVideoId}
+              title={`${data.name} ${t.common.demoVideo}`}
+            />
+          </div>
+        )}
+
+        {meta.screenshots && meta.screenshots.length > 0 && (
+          <div className="mt-20">
+            <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground">
+              {t.common.screenshots}
+            </h2>
+            <ScreenshotGallery
+              screenshots={meta.screenshots}
+              productName={data.name}
+              gradient={meta.gradient}
+            />
+          </div>
+        )}
 
         <div className="mt-20">
           <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground">

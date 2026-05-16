@@ -19,6 +19,9 @@ export const dictionaries = {
       privacyPolicy: "Gizlilik Politikası",
       termsOfUse: "Kullanım Sözleşmesi",
       deleteAccount: "Hesap Silme",
+      screenshots: "Uygulamadan Görünümler",
+      demoVideo: "Tanıtım Videosu",
+      replay: "Tekrar İzle",
     },
     hero: {
       eyebrow: "Teknoloji · Mobil & Web Uygulamaları",
@@ -154,6 +157,9 @@ export const dictionaries = {
       privacyPolicy: "Privacy Policy",
       termsOfUse: "Terms of Use",
       deleteAccount: "Delete Account",
+      screenshots: "App Screenshots",
+      demoVideo: "Watch the demo",
+      replay: "Replay",
     },
     hero: {
       eyebrow: "Technology · Mobile & Web Apps",
