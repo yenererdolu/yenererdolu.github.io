@@ -6,6 +6,7 @@ export type ProductMeta = {
   gradient: string;
   screenshots?: string[];
   youtubeVideoId?: string;
+  videoUrl?: string;
 };
 
 export const PRODUCTS: ProductMeta[] = [
@@ -40,6 +41,7 @@ export const PRODUCTS: ProductMeta[] = [
     slug: "lumnos",
     iconUrl: "/images/products/lumnos.png",
     gradient: "bg-gradient-to-br from-amber-200 via-yellow-100 to-emerald-100",
+    videoUrl: "/videos/lumnos/demo.mp4",
     screenshots: [
       "/images/products/lumnos/screenshots/01.png",
       "/images/products/lumnos/screenshots/02.jpg",

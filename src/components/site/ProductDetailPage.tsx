@@ -87,15 +87,27 @@ function ProductDetailContent({ slug }: Props) {
           </ul>
         </div>
 
-        {meta.youtubeVideoId && (
+        {(meta.youtubeVideoId || meta.videoUrl) && (
           <div className="mt-20">
             <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground">
               {t.common.demoVideo}
             </h2>
-            <YoutubeVideo
-              videoId={meta.youtubeVideoId}
-              title={`${data.name} ${t.common.demoVideo}`}
-            />
+            {meta.youtubeVideoId ? (
+              <YoutubeVideo
+                videoId={meta.youtubeVideoId}
+                title={`${data.name} ${t.common.demoVideo}`}
+              />
+            ) : (
+              <div className="relative mx-auto w-full max-w-3xl overflow-hidden rounded-2xl shadow-elegant">
+                <video
+                  src={meta.videoUrl}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="h-full w-full"
+                />
+              </div>
+            )}
           </div>
         )}
 
