@@ -98,7 +98,7 @@ function ProductDetailContent({ slug }: Props) {
                 title={`${data.name} ${t.common.demoVideo}`}
               />
             ) : (
-              <div className="relative mx-auto w-full max-w-3xl overflow-hidden rounded-2xl shadow-elegant">
+              <div className="relative mx-auto w-full max-w-sm overflow-hidden rounded-2xl shadow-elegant">
                 <video
                   src={meta.videoUrl}
                   controls
