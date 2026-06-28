@@ -2,22 +2,48 @@ import { useState } from "react";
 import { Mail, MapPin, Globe, Send } from "lucide-react";
 import { useT } from "@/i18n/LanguageProvider";
 import { AppShell } from "@/components/site/AppShell";
-import { SUPPORT_EMAIL } from "@/lib/contact";
+import { SUPPORT_EMAIL, WEB3FORMS_ACCESS_KEY } from "@/lib/contact";
+
+type SubmitStatus = "idle" | "sending" | "success" | "error";
 
 function ContactContent() {
   const t = useT();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState<SubmitStatus>("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!SUPPORT_EMAIL) return;
-    const subject = encodeURIComponent(`[Bugalgo] ${name || "Mesaj"}`);
-    const body = encodeURIComponent(
-      `${message}\n\n—\n${name}${email ? ` <${email}>` : ""}`
-    );
-    window.location.href = `mailto:${SUPPORT_EMAIL}?subject=${subject}&body=${body}`;
+    setStatus("sending");
+    try {
+      // FormData kullanıyoruz: "basit istek" olduğu için CORS preflight (OPTIONS)
+      // tetiklenmez. JSON + application/json göndermek preflight'a yol açıyor ve
+      // Web3Forms preflight'a CORS yanıtı döndürmediği için istek bloklanıyordu.
+      const formData = new FormData();
+      formData.append("access_key", WEB3FORMS_ACCESS_KEY);
+      formData.append("subject", `[Bugalgo] ${name || "Yeni iletişim mesajı"}`);
+      formData.append("from_name", name || "Bugalgo iletişim formu");
+      formData.append("name", name);
+      formData.append("email", email);
+      formData.append("message", message);
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus("success");
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -86,11 +112,22 @@ function ContactContent() {
               </div>
               <button
                 type="submit"
-                className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-elegant transition-transform hover:-translate-y-0.5"
+                disabled={status === "sending"}
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-elegant transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0"
               >
                 <Send className="h-4 w-4" />
-                {t.contact.send}
+                {status === "sending" ? t.contact.sending : t.contact.send}
               </button>
+              {status === "success" && (
+                <p role="status" className="text-sm font-medium text-emerald-600">
+                  {t.contact.success}
+                </p>
+              )}
+              {status === "error" && (
+                <p role="alert" className="text-sm font-medium text-red-600">
+                  {t.contact.error}
+                </p>
+              )}
             </div>
           </form>
 
