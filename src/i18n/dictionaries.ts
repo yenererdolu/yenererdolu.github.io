@@ -119,7 +119,7 @@ export const dictionaries = {
     stats: {
       title: "Rakamlarla Bugalgo",
       items: [
-        { value: "3+", label: "Yayında Uygulama" },
+        { value: "4+", label: "Yayında Uygulama" },
         { value: "E2E", label: "Uçtan Uca Şifreleme" },
         { value: "KVKK", label: "Uyumlu Altyapı" },
         { value: "iOS+Android", label: "App Store & Google Play" },
@@ -274,7 +274,7 @@ export const dictionaries = {
     stats: {
       title: "Bugalgo by the numbers",
       items: [
-        { value: "3+", label: "Live Apps" },
+        { value: "4+", label: "Live Apps" },
         { value: "E2E", label: "End-to-End Encryption" },
         { value: "KVKK", label: "Compliant Infrastructure" },
         { value: "iOS+Android", label: "App Store & Google Play" },
