@@ -1,9 +1,11 @@
-export type ProductSlug = "acikeczane" | "sinavkocu" | "lumnos";
+export type ProductSlug = "acikeczane" | "sinavkocu" | "lumnos" | "opero";
 
 export type ProductMeta = {
   slug: ProductSlug;
   iconUrl: string;
   gradient: string;
+  /** "mobile" (App Store / Google Play) varsayılan; "desktop" → mağaza yerine demo/iletişim CTA. */
+  platform?: "mobile" | "desktop";
   screenshots?: string[];
   youtubeVideoId?: string;
   videoUrl?: string;
@@ -53,6 +55,12 @@ export const PRODUCTS: ProductMeta[] = [
       "/images/products/lumnos/screenshots/08.png",
     ],
   },
+  {
+    slug: "opero",
+    iconUrl: "/images/products/opero.png",
+    gradient: "bg-gradient-to-br from-indigo-200 via-sky-100 to-teal-100",
+    platform: "desktop",
+  },
 ];
 
 export function getProductMeta(slug: string): ProductMeta | undefined {
@@ -71,4 +79,6 @@ export const STORE_URLS: Record<ProductSlug, { ios?: string; android?: string }>
   lumnos: {
     android: "https://play.google.com/store/apps/details?id=com.bugalgo.lumnos",
   },
+  // Opero bir Windows masaüstü uygulamasıdır; mağaza linki yoktur (demo/iletişim CTA kullanılır).
+  opero: {},
 };

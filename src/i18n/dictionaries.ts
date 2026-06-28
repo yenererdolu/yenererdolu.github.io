@@ -22,6 +22,8 @@ export const dictionaries = {
       screenshots: "Uygulamadan Görünümler",
       demoVideo: "Tanıtım Videosu",
       replay: "Tekrar İzle",
+      desktopApp: "Windows Masaüstü Uygulaması",
+      requestDemo: "Demo & Bilgi Al",
     },
     hero: {
       eyebrow: "Teknoloji · Mobil & Web Uygulamaları",
@@ -73,6 +75,22 @@ export const dictionaries = {
           "Custom study plans",
           "Achievement system",
           "25 beautiful color themes",
+        ],
+      },
+      opero: {
+        name: "Opero",
+        tag: "İşletme · Masaüstü",
+        short:
+          "Kapı üretim firmaları için iş, müşteri ve araç operasyonlarını tek masaüstünde toplayan, çevrimdışı ve KVKK uyumlu yönetim yazılımı.",
+        long: "Opero, kapı üretim firmaları için tasarlanmış, tamamen çevrimdışı çalışan masaüstü operasyon yazılımıdır. İş & müşteri takibi, saha ziyaretleri, araç yönetimi (evrak, masraf, periyodik kontroller) ve otomatik hatırlatmaları tek bir yerde toplar. Verileriniz cihazınızda kalır; rol bazlı erişim ve KVKK uyumlu altyapı ile güvenle çalışır.",
+        features: [
+          "İş & müşteri takibi — durum hattı, termin ve gecikme uyarıları",
+          "Saha ziyaret planlama ve tek tıkla iş emri PDF çıktısı",
+          "Araç yönetimi: evrak, masraf ve periyodik kontroller (muayene, sigorta, MTV)",
+          "Otomatik hatırlatmalar — e-posta, WhatsApp ve SMS",
+          "Rol bazlı giriş (yönetici / kullanıcı) ve denetim kayıtları",
+          "Çevrimdışı çalışma, yerel veri ve zaman damgalı yedekleme",
+          "KVKK uyumlu — verileriniz cihazınızda kalır",
         ],
       },
     },
@@ -160,6 +178,8 @@ export const dictionaries = {
       screenshots: "App Screenshots",
       demoVideo: "Watch the demo",
       replay: "Replay",
+      desktopApp: "Windows Desktop App",
+      requestDemo: "Request a Demo",
     },
     hero: {
       eyebrow: "Technology · Mobile & Web Apps",
@@ -210,6 +230,22 @@ export const dictionaries = {
           "Custom study plans",
           "Achievement system",
           "25 beautiful color themes",
+        ],
+      },
+      opero: {
+        name: "Opero",
+        tag: "Business · Desktop",
+        short:
+          "An offline, KVKK-compliant desktop suite that unifies job, customer and vehicle operations for door manufacturing companies.",
+        long: "Opero is a fully offline desktop operations suite built for door manufacturing companies. It brings job & customer tracking, field visits, vehicle management (documents, expenses, periodic inspections) and automated reminders together in one place. Your data stays on your device, secured by role-based access and a KVKK-compliant foundation.",
+        features: [
+          "Job & customer tracking — status pipeline, due dates and overdue alerts",
+          "Field-visit planning and one-click work-order PDF export",
+          "Vehicle management: documents, expenses and periodic inspections (inspection, insurance, road tax)",
+          "Automated reminders — email, WhatsApp and SMS",
+          "Role-based login (admin / user) and audit logging",
+          "Offline operation, local data and timestamped backups",
+          "KVKK compliant — your data never leaves the device",
         ],
       },
     },

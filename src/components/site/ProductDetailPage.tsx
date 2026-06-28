@@ -1,4 +1,4 @@
-import { Check, ArrowLeft, LifeBuoy, Shield, FileText, UserX, ArrowRight } from "lucide-react";
+import { Check, ArrowLeft, LifeBuoy, Shield, FileText, UserX, ArrowRight, Monitor } from "lucide-react";
 import { useT } from "@/i18n/LanguageProvider";
 import { getProductMeta, PRODUCTS, type ProductSlug } from "@/lib/products";
 import { StoreBadges } from "@/components/site/StoreBadges";
@@ -50,7 +50,23 @@ function ProductDetailContent({ slug }: Props) {
               {data.long}
             </p>
             <div className="mt-8">
-              <StoreBadges slug={slug} />
+              {meta.platform === "desktop" ? (
+                <div className="flex flex-wrap items-center gap-3">
+                  <a
+                    href="/contact/"
+                    className="group inline-flex items-center gap-2 rounded-xl bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-elegant transition-transform hover:-translate-y-0.5"
+                  >
+                    {t.common.requestDemo}
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                  </a>
+                  <span className="inline-flex items-center gap-2 rounded-xl border border-border bg-card/80 px-4 py-3 text-sm font-medium text-muted-foreground">
+                    <Monitor className="h-5 w-5 text-foreground" aria-hidden />
+                    {t.common.desktopApp}
+                  </span>
+                </div>
+              ) : (
+                <StoreBadges slug={slug} />
+              )}
             </div>
           </div>
 

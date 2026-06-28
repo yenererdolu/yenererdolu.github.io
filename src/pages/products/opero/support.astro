@@ -1,0 +1,59 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Destek — Opero — Bugalgo"
+  description="Opero masaüstü operasyon yazılımı ile ilgili sıkça sorulan sorular ve destek bilgileri."
+  ogTitle="Destek — Opero"
+  canonical="https://bugalgo.com/products/opero/support/"
+>
+  <LegalPage
+    client:load
+    title="Destek & SSS"
+    productName="Opero"
+    productIconUrl="/images/products/opero.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Ürünler", href: "/products/" },
+      { label: "Opero", href: "/products/opero/" },
+      { label: "Destek" },
+    ]}
+  >
+    <p class="text-muted-foreground mb-6">Opero kurulumu, kullanımı ve lisanslama hakkında sık sorulan sorular. Daha fazla bilgi veya demo talebi için <a href="/contact/" class="text-primary underline">iletişim sayfasından</a> bize ulaşabilirsiniz.</p>
+
+    <div class="space-y-3">
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Opero hangi platformlarda çalışır?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Opero, Windows için geliştirilmiş bir masaüstü uygulamasıdır. İnternet bağlantısı olmadan, tamamen çevrimdışı çalışır.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Verilerim nerede saklanıyor?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Tüm verileriniz yalnızca kendi bilgisayarınızda yerel bir veritabanında saklanır. Hiçbir veri buluta veya üçüncü bir sunucuya gönderilmez. Fotoğraf ve belgeler de aynı şekilde cihazınızda tutulur.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Yedekleme nasıl çalışır?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Opero zaman damgalı otomatik yedekler oluşturur ve son yedekleri saklar. Ayrıca dilediğiniz zaman manuel ZIP dışa aktarımı alabilir, yedeği OneDrive/Drive gibi bir konuma kopyalayarak şirket dışı (off-site) güvenlik sağlayabilirsiniz.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Birden fazla kullanıcı tipi var mı?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Evet. Opero rol bazlı giriş sunar: <strong>Yönetici</strong> ayarları, kullanıcı yönetimini ve denetim kayıtlarını görür; <strong>normal kullanıcı</strong> yalnızca rutin operasyon ekranlarını kullanır. Menüler role göre filtrelenir.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Hatırlatmalar nasıl gönderiliyor?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Periyodik kontroller, termin ve gecikmeler için otomatik hatırlatmalar üretilir. Bunlar uygulama içi bildirim olarak gösterilir; ayrıca yapılandırırsanız e-posta, WhatsApp (resmi Cloud API) ve SMS kanallarıyla gönderilebilir. İletişim bilgileri yalnızca seçtiğiniz sağlayıcıya iletilir.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Demo veya fiyat bilgisi nasıl alırım?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Opero kuruma özel bir operasyon yazılımıdır. Demo, kurulum ve fiyatlandırma için <a href="/contact/" class="text-primary underline">iletişim sayfasından</a> bize yazabilirsiniz.</p>
+      </details>
+    </div>
+  </LegalPage>
+</Base>

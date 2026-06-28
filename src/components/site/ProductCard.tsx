@@ -1,8 +1,9 @@
 import { ArrowRight } from "lucide-react";
 import { useT } from "@/i18n/LanguageProvider";
+import type { ProductSlug } from "@/lib/products";
 
 type Props = {
-  slug: "acikeczane" | "sinavkocu" | "lumnos";
+  slug: ProductSlug;
   name: string;
   tag: string;
   short: string;

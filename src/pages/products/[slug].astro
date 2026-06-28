@@ -6,7 +6,7 @@ import type { ProductSlug } from "@/lib/products";
 import "@/styles.css";
 
 export const getStaticPaths = (() => {
-  const slugs: ProductSlug[] = ["acikeczane", "sinavkocu", "lumnos"];
+  const slugs: ProductSlug[] = ["acikeczane", "sinavkocu", "lumnos", "opero"];
   return slugs.map((slug) => ({ params: { slug } }));
 }) satisfies GetStaticPaths;
 
@@ -16,12 +16,14 @@ const titles: Record<ProductSlug, string> = {
   acikeczane: "AçıkEczane — Bugalgo",
   sinavkocu: "Sınav Koçu — Bugalgo",
   lumnos: "Lumnos — Bugalgo",
+  opero: "Opero — Bugalgo",
 };
 
 const descriptions: Record<ProductSlug, string> = {
   acikeczane: "Nöbetçi eczane bilgilerine anında ulaşın, eczanelerle uçtan uca şifreli mesajlaşma ile güvenle iletişim kurun.",
   sinavkocu: "YKS, LGS, KPSS, ALES, DGS için akıllı pomodoro çalışma takibi. Ders bazlı istatistikler ve başarım sistemi.",
   lumnos: "Smart Pomodoro study tracker for exam candidates worldwide. Detailed statistics, study plans, and achievement system.",
+  opero: "Kapı üretim firmaları için çevrimdışı, KVKK uyumlu masaüstü operasyon yazılımı: iş & müşteri takibi, araç yönetimi ve otomatik hatırlatmalar.",
 };
 ---
 

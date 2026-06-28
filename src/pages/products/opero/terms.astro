@@ -1,0 +1,43 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Kullanım Sözleşmesi — Opero — Bugalgo"
+  description="Opero masaüstü operasyon yazılımı kullanım koşulları ve lisans şartları."
+  ogTitle="Kullanım Sözleşmesi — Opero"
+  canonical="https://bugalgo.com/products/opero/terms/"
+>
+  <LegalPage
+    client:load
+    title="Kullanım Sözleşmesi"
+    date="Son güncelleme: 28.06.2026"
+    productName="Opero"
+    productIconUrl="/images/products/opero.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Ürünler", href: "/products/" },
+      { label: "Opero", href: "/products/opero/" },
+      { label: "Kullanım" },
+    ]}
+  >
+    <p>Bu Kullanım Sözleşmesi, Opero masaüstü yazılımının ("Uygulama") kullanımına ilişkin koşulları düzenler. Uygulamayı kurarak ve kullanarak bu koşulları kabul etmiş sayılırsınız.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">1. Lisans</h2>
+    <p>Opero, kuruma özel olarak lisanslanan bir işletme yazılımıdır. Uygulama; yalnızca lisans verilen kurum tarafından, kurum içi operasyonların yürütülmesi amacıyla kullanılabilir. Yazılımın çoğaltılması, başka kurumlara dağıtılması veya yeniden satışı yasaktır.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">2. Sorumluluk</h2>
+    <p>Uygulama "olduğu gibi" sunulur. Kurumun girdiği verilerin doğruluğu, yedeklenmesi ve güvenli saklanması kullanıcı kurumun sorumluluğundadır. Yedek alınmaması veya cihaz arızası kaynaklı veri kayıplarından Bugalgo sorumlu tutulamaz.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">3. Veri ve Gizlilik</h2>
+    <p>Opero verileri yalnızca cihazda saklar ve çevrimdışı çalışır. Veri işleme detayları için <a href="/products/opero/privacy/" class="text-primary underline">Gizlilik Politikası</a> sayfasını inceleyiniz.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">4. Güncellemeler</h2>
+    <p>Uygulama özellikleri zaman içinde geliştirilebilir. Önemli değişiklikler bu sözleşmeye yansıtılır ve "son güncelleme" tarihi güncellenir.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">5. İletişim</h2>
+    <p>Sözleşme, lisans veya destek ile ilgili sorularınız için <a href="/contact/" class="text-primary underline">iletişim sayfasından</a> bize ulaşabilirsiniz.</p>
+  </LegalPage>
+</Base>

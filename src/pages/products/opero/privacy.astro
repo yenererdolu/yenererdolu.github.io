@@ -1,0 +1,50 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Gizlilik Politikası — Opero — Bugalgo"
+  description="Opero Gizlilik ve KVKK Aydınlatma Metni. Verilerinizin yalnızca cihazınızda nasıl korunduğunu öğrenin."
+  ogTitle="Gizlilik Politikası — Opero"
+  canonical="https://bugalgo.com/products/opero/privacy/"
+>
+  <LegalPage
+    client:load
+    title="Gizlilik ve KVKK Aydınlatma Metni"
+    date="Son güncelleme: 28.06.2026"
+    productName="Opero"
+    productIconUrl="/images/products/opero.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Ürünler", href: "/products/" },
+      { label: "Opero", href: "/products/opero/" },
+      { label: "Gizlilik" },
+    ]}
+  >
+    <p>Opero ("Uygulama"), kapı üretim firmaları için geliştirilmiş çevrimdışı bir masaüstü operasyon yazılımıdır. Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında verilerinizin nasıl işlendiğini açıklar.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">1. Temel İlke — Veriler Cihazınızda Kalır</h2>
+    <p>Opero tamamen çevrimdışı çalışır. Müşteri, iş, araç ve personel kayıtları dahil tüm veriler yalnızca uygulamanın kurulu olduğu bilgisayarda yerel bir veritabanında (SQLite) ve yerel dosya sisteminde saklanır. Bugalgo bu verilere erişemez; veriler buluta veya herhangi bir sunucuya aktarılmaz.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">2. İşlenen Veriler</h2>
+    <p>Uygulamayı kullanan kurumun girdiği ölçüde aşağıdaki veriler cihazda işlenebilir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li><strong>Müşteri bilgileri</strong> — ad, telefon, adres gibi iletişim verileri</li>
+      <li><strong>İş & ziyaret kayıtları</strong> — iş emirleri, durumlar, notlar ve fotoğraflar</li>
+      <li><strong>Araç verileri</strong> — plaka, evrak, masraf ve periyodik kontrol bilgileri</li>
+      <li><strong>Personel ve kullanıcı hesapları</strong> — ad, rol ve giriş bilgileri</li>
+    </ul>
+    <p class="mt-2">Bu veriler, kurumun operasyonlarını yürütmesi amacıyla yalnızca yerelde tutulur. Kişisel verilere ilişkin değişiklikler için tutulan denetim (audit) kayıtlarında verilerin içeriği değil, yalnızca hangi alanın değiştiği saklanır; KVKK uyarınca PII değerleri anonimleştirilebilir.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">3. Bildirim Kanalları</h2>
+    <p>Hatırlatmalar varsayılan olarak uygulama içinde gösterilir. Kurum e-posta, WhatsApp (resmi Cloud API) veya SMS kanallarını yapılandırırsa, ilgili mesaj ve alıcı iletişim bilgisi yalnızca seçilen sağlayıcıya gönderilir. API anahtarları işletim sisteminin güvenli kasasında (Windows DPAPI / safeStorage) şifreli saklanır.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">4. Yedekleme</h2>
+    <p>Yedekler kullanıcının seçtiği konuma (yerel disk veya OneDrive/Drive gibi bir klasör) yazılır. Yedeklerin saklanması ve korunması, yedeği oluşturan kurumun sorumluluğundadır.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">5. Veri Sorumlusu ve Haklar</h2>
+    <p>Veriler kurumun kendi cihazında tutulduğundan, KVKK kapsamında veri sorumlusu uygulamayı kullanan kurumdur. Yazılımla ilgili sorularınız için <a href="/products/opero/support/" class="text-primary underline">destek sayfasını</a> kullanabilirsiniz.</p>
+  </LegalPage>
+</Base>
