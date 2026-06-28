@@ -1,0 +1,47 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Gizlilik Politikası — EvoCafe — Bugalgo"
+  description="EvoCafe Gizlilik ve KVKK Aydınlatma Metni. Verilerinizin yalnızca cihazınızda nasıl korunduğunu öğrenin."
+  ogTitle="Gizlilik Politikası — EvoCafe"
+  canonical="https://bugalgo.com/products/evocafe/privacy/"
+>
+  <LegalPage
+    client:load
+    title="Gizlilik ve KVKK Aydınlatma Metni"
+    date="Son güncelleme: 29.06.2026"
+    productName="EvoCafe"
+    productIconUrl="/images/products/evocafe.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Ürünler", href: "/products/" },
+      { label: "EvoCafe", href: "/products/evocafe/" },
+      { label: "Gizlilik" },
+    ]}
+  >
+    <p>EvoCafe ("Uygulama"), kafe ve restoranlar için geliştirilmiş çevrimdışı bir masaüstü POS yazılımıdır. Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında verilerinizin nasıl işlendiğini açıklar.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">1. Temel İlke — Veriler Cihazınızda Kalır</h2>
+    <p>EvoCafe tamamen çevrimdışı çalışır. Ürün, sipariş, masa, cari hesap ve personel kayıtları dahil tüm veriler yalnızca uygulamanın kurulu olduğu bilgisayarda yerel bir veritabanında (SQLite) saklanır. Bugalgo bu verilere erişemez; veriler buluta veya herhangi bir sunucuya aktarılmaz.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">2. İşlenen Veriler</h2>
+    <p>Uygulamayı kullanan işletmenin girdiği ölçüde aşağıdaki veriler cihazda işlenebilir:</p>
+    <ul class="list-disc pl-6 space-y-1 mt-2">
+      <li><strong>Cari hesap bilgileri</strong> — müşteri/tedarikçi adı, telefon, adres ve vergi bilgileri</li>
+      <li><strong>Sipariş & satış kayıtları</strong> — adisyonlar, ürünler, tutarlar ve ödeme türleri</li>
+      <li><strong>Ürün ve stok verileri</strong> — ürünler, fiyatlar, reçeteler ve stok hareketleri</li>
+      <li><strong>Personel ve kullanıcı hesapları</strong> — ad, rol ve PIN giriş bilgileri</li>
+    </ul>
+    <p class="mt-2">Bu veriler, işletmenin operasyonlarını yürütmesi amacıyla yalnızca yerelde tutulur.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">3. Yedekleme</h2>
+    <p>Yedekler kullanıcının seçtiği konuma (yerel disk veya OneDrive/Drive gibi bir klasör) yazılır. Yedeklerin saklanması ve korunması, yedeği oluşturan işletmenin sorumluluğundadır.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">4. Veri Sorumlusu ve Haklar</h2>
+    <p>Veriler işletmenin kendi cihazında tutulduğundan, KVKK kapsamında veri sorumlusu uygulamayı kullanan işletmedir. Yazılımla ilgili sorularınız için <a href="/products/evocafe/support/" class="text-primary underline">destek sayfasını</a> kullanabilirsiniz.</p>
+  </LegalPage>
+</Base>

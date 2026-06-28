@@ -1,0 +1,43 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Kullanım Sözleşmesi — EvoCafe — Bugalgo"
+  description="EvoCafe masaüstü POS yazılımı kullanım koşulları ve lisans şartları."
+  ogTitle="Kullanım Sözleşmesi — EvoCafe"
+  canonical="https://bugalgo.com/products/evocafe/terms/"
+>
+  <LegalPage
+    client:load
+    title="Kullanım Sözleşmesi"
+    date="Son güncelleme: 29.06.2026"
+    productName="EvoCafe"
+    productIconUrl="/images/products/evocafe.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Ürünler", href: "/products/" },
+      { label: "EvoCafe", href: "/products/evocafe/" },
+      { label: "Kullanım" },
+    ]}
+  >
+    <p>Bu Kullanım Sözleşmesi, EvoCafe masaüstü yazılımının ("Uygulama") kullanımına ilişkin koşulları düzenler. Uygulamayı kurarak ve kullanarak bu koşulları kabul etmiş sayılırsınız.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">1. Lisans</h2>
+    <p>EvoCafe, işletmelere lisanslanan bir POS yazılımıdır. Uygulama; yalnızca lisans verilen işletme tarafından, kendi satış ve operasyon süreçlerinin yürütülmesi amacıyla kullanılabilir. Yazılımın çoğaltılması, başka işletmelere dağıtılması veya yeniden satışı yasaktır.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">2. Sorumluluk</h2>
+    <p>Uygulama "olduğu gibi" sunulur. İşletmenin girdiği verilerin doğruluğu, yedeklenmesi ve güvenli saklanması kullanıcı işletmenin sorumluluğundadır. Yedek alınmaması veya cihaz arızası kaynaklı veri kayıplarından Bugalgo sorumlu tutulamaz.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">3. Veri ve Gizlilik</h2>
+    <p>EvoCafe verileri yalnızca cihazda saklar ve çevrimdışı çalışır. Veri işleme detayları için <a href="/products/evocafe/privacy/" class="text-primary underline">Gizlilik Politikası</a> sayfasını inceleyiniz.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">4. Güncellemeler</h2>
+    <p>Uygulama özellikleri zaman içinde geliştirilebilir. Önemli değişiklikler bu sözleşmeye yansıtılır ve "son güncelleme" tarihi güncellenir.</p>
+
+    <h2 class="text-xl font-bold mt-6 mb-2">5. İletişim</h2>
+    <p>Sözleşme, lisans veya destek ile ilgili sorularınız için <a href="/contact/" class="text-primary underline">iletişim sayfasından</a> bize ulaşabilirsiniz.</p>
+  </LegalPage>
+</Base>

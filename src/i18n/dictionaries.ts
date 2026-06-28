@@ -93,6 +93,23 @@ export const dictionaries = {
           "KVKK uyumlu — verileriniz cihazınızda kalır",
         ],
       },
+      evocafe: {
+        name: "EvoCafe",
+        tag: "Restoran & Kafe · Masaüstü",
+        short:
+          "Kafe ve restoranlar için adisyon, masa, stok ve cari yönetimini tek masaüstünde toplayan, çevrimdışı çalışan POS yazılımı.",
+        long: "EvoCafe, kafe ve restoranlar için tasarlanmış, tamamen çevrimdışı çalışan bir masaüstü POS (satış noktası) yazılımıdır. Masa planı, hızlı adisyon, hesap bölme, stok & reçete takibi, cari hesaplar, masraf yönetimi ve gün sonu (Z) raporlarını tek bir yerde toplar. PIN ile hızlı personel girişi ve rol bazlı yetki sunar; verileriniz cihazınızda kalır ve otomatik yedeklenir.",
+        features: [
+          "Masa planı ve anlık masa durumu — taşıma, birleştirme ve adisyon takibi",
+          "Hızlı adisyon ve sepet — kategori bazlı ürün ızgarası",
+          "Hesap bölme (ürüne göre veya eşit) ve nakit / kart / veresiye / ikram ödemeleri",
+          "Süre bazlı ürünler — PlayStation, bilardo ve masa kiralama için dakika/saat ücretlendirme",
+          "Stok ve reçete takibi — malzeme bazlı otomatik stok düşümü",
+          "Cari hesaplar (müşteri / tedarikçi), masraf yönetimi ve gün sonu Z-raporu",
+          "PIN ile giriş, rol bazlı yetki (yönetici / garson)",
+          "Çevrimdışı çalışma, yerel veri ve otomatik yedekleme",
+        ],
+      },
     },
     values: {
       title: "Değerlerimiz",
@@ -246,6 +263,23 @@ export const dictionaries = {
           "Role-based login (admin / user) and audit logging",
           "Offline operation, local data and timestamped backups",
           "KVKK compliant — your data never leaves the device",
+        ],
+      },
+      evocafe: {
+        name: "EvoCafe",
+        tag: "Restaurant POS · Desktop",
+        short:
+          "An offline desktop POS that unifies orders, tables, inventory and accounts in one place for cafés and restaurants.",
+        long: "EvoCafe is a fully offline desktop POS (point-of-sale) suite built for cafés and restaurants. It brings the table floor plan, fast order taking, bill splitting, inventory & recipe tracking, customer/supplier accounts, expense management and end-of-day (Z) reports together in one place. Staff sign in with a PIN under role-based permissions; your data stays on the device and is backed up automatically.",
+        features: [
+          "Table floor plan with live status — transfer, merge and per-table tabs",
+          "Fast order taking with a category-based product grid",
+          "Bill splitting (by item or equal) and cash / card / credit / comp payments",
+          "Time-based products — per-minute/hour billing for PlayStation, billiards and table rentals",
+          "Inventory & recipe tracking with automatic ingredient-based stock deduction",
+          "Customer/supplier accounts, expense management and end-of-day Z-report",
+          "PIN login with role-based access (admin / waiter)",
+          "Offline operation, local data and automatic backups",
         ],
       },
     },

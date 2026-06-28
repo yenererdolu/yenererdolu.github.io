@@ -1,0 +1,64 @@
+---
+import Base from "@/layouts/Base.astro";
+import { LegalPage } from "@/components/site/LegalPage";
+import "@/styles.css";
+---
+
+<Base
+  title="Destek — EvoCafe — Bugalgo"
+  description="EvoCafe masaüstü POS yazılımı ile ilgili sıkça sorulan sorular ve destek bilgileri."
+  ogTitle="Destek — EvoCafe"
+  canonical="https://bugalgo.com/products/evocafe/support/"
+>
+  <LegalPage
+    client:load
+    title="Destek & SSS"
+    productName="EvoCafe"
+    productIconUrl="/images/products/evocafe.png"
+    breadcrumbs={[
+      { label: "Bugalgo", href: "/" },
+      { label: "Ürünler", href: "/products/" },
+      { label: "EvoCafe", href: "/products/evocafe/" },
+      { label: "Destek" },
+    ]}
+  >
+    <p class="text-muted-foreground mb-6">EvoCafe kurulumu, kullanımı ve lisanslama hakkında sık sorulan sorular. Daha fazla bilgi veya demo talebi için <a href="/contact/" class="text-primary underline">iletişim sayfasından</a> bize ulaşabilirsiniz.</p>
+
+    <div class="space-y-3">
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">EvoCafe hangi platformlarda çalışır?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">EvoCafe, Windows ve macOS için geliştirilmiş bir masaüstü uygulamasıdır. İnternet bağlantısı olmadan, tamamen çevrimdışı çalışır.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Verilerim nerede saklanıyor?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Tüm verileriniz (ürünler, siparişler, masalar, cari hesaplar ve raporlar) yalnızca kendi bilgisayarınızda yerel bir veritabanında saklanır. Hiçbir veri buluta veya üçüncü bir sunucuya gönderilmez.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Süre bazlı ürünler (PlayStation, bilardo) nasıl çalışır?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Bir ürünü birim olarak "dakika" veya "saat" tanımladığınızda, EvoCafe masa açıldığı andan itibaren süreyi otomatik sayar ve tutarı canlı olarak hesaplar. PlayStation, bilardo masaları ve saatlik masa kiralama için idealdir.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Hesabı nasıl bölebilirim?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">EvoCafe hesap bölmeyi iki şekilde destekler: ürün bazında (kim ne yediyse) veya eşit bölüştürme. Ödemeler nakit, kart, veresiye (cari hesap) veya ikram olarak alınabilir.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Birden fazla kullanıcı tipi var mı?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Evet. EvoCafe PIN ile hızlı giriş ve rol bazlı yetki sunar: <strong>Yönetici</strong> tüm ekranlara, raporlara ve ayarlara erişir; <strong>garson</strong> yalnızca satış, sipariş ve masa ekranlarını kullanır.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Yedekleme nasıl çalışır?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">EvoCafe günlük veya haftalık otomatik yedekler oluşturur ve geçmiş yedekleri saklar. Yedek konumunu siz belirlersiniz; OneDrive/Drive gibi bir klasör seçerek şirket dışı (off-site) güvenlik de sağlayabilirsiniz.</p>
+      </details>
+
+      <details class="rounded-xl border border-border p-4 open:shadow-soft">
+        <summary class="cursor-pointer font-medium text-foreground">Demo veya fiyat bilgisi nasıl alırım?</summary>
+        <p class="mt-3 text-sm text-muted-foreground">Demo, kurulum ve fiyatlandırma için <a href="/contact/" class="text-primary underline">iletişim sayfasından</a> bize yazabilirsiniz.</p>
+      </details>
+    </div>
+  </LegalPage>
+</Base>

@@ -1,4 +1,4 @@
-export type ProductSlug = "acikeczane" | "sinavkocu" | "lumnos" | "opero";
+export type ProductSlug = "acikeczane" | "sinavkocu" | "lumnos" | "opero" | "evocafe";
 
 export type ProductMeta = {
   slug: ProductSlug;
@@ -61,6 +61,12 @@ export const PRODUCTS: ProductMeta[] = [
     gradient: "bg-gradient-to-br from-indigo-200 via-sky-100 to-teal-100",
     platform: "desktop",
   },
+  {
+    slug: "evocafe",
+    iconUrl: "/images/products/evocafe.png",
+    gradient: "bg-gradient-to-br from-orange-200 via-amber-100 to-rose-100",
+    platform: "desktop",
+  },
 ];
 
 export function getProductMeta(slug: string): ProductMeta | undefined {
@@ -81,4 +87,6 @@ export const STORE_URLS: Record<ProductSlug, { ios?: string; android?: string }>
   },
   // Opero bir Windows masaüstü uygulamasıdır; mağaza linki yoktur (demo/iletişim CTA kullanılır).
   opero: {},
+  // EvoCafe bir Windows/macOS masaüstü POS uygulamasıdır; mağaza linki yoktur (demo/iletişim CTA kullanılır).
+  evocafe: {},
 };
