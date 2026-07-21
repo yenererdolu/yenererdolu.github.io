@@ -60,6 +60,16 @@ export const PRODUCTS: ProductMeta[] = [
     iconUrl: "/images/products/opero.png",
     gradient: "bg-gradient-to-br from-indigo-200 via-sky-100 to-teal-100",
     platform: "desktop",
+    screenshots: [
+      "/images/products/opero/screenshots/01.jpg",
+      "/images/products/opero/screenshots/02.jpg",
+      "/images/products/opero/screenshots/03.jpg",
+      "/images/products/opero/screenshots/04.jpg",
+      "/images/products/opero/screenshots/05.jpg",
+      "/images/products/opero/screenshots/06.jpg",
+      "/images/products/opero/screenshots/07.jpg",
+      "/images/products/opero/screenshots/08.jpg",
+    ],
   },
   {
     slug: "evocafe",
