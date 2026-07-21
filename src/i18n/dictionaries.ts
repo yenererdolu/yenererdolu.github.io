@@ -81,8 +81,8 @@ export const dictionaries = {
         name: "Opero",
         tag: "İşletme · Masaüstü",
         short:
-          "Kapı üretim firmaları için iş, müşteri ve araç operasyonlarını tek masaüstünde toplayan, çevrimdışı ve KVKK uyumlu yönetim yazılımı.",
-        long: "Opero, kapı üretim firmaları için tasarlanmış, tamamen çevrimdışı çalışan masaüstü operasyon yazılımıdır. İş & müşteri takibi, saha ziyaretleri, araç yönetimi (evrak, masraf, periyodik kontroller) ve otomatik hatırlatmaları tek bir yerde toplar. Verileriniz cihazınızda kalır; rol bazlı erişim ve KVKK uyumlu altyapı ile güvenle çalışır.",
+          "Üretim, montaj ve saha hizmeti veren işletmeler için iş, müşteri ve araç operasyonlarını tek masaüstünde toplayan, çevrimdışı ve KVKK uyumlu yönetim yazılımı.",
+        long: "Opero; üretim, montaj ve saha hizmeti veren işletmeler (mobilya, doğrama, cam, metal işleme, asansör, iklimlendirme, teknik servis ve daha fazlası) için tasarlanmış, tamamen çevrimdışı çalışan masaüstü operasyon yazılımıdır. İş & müşteri takibi, saha ziyaretleri, araç yönetimi (evrak, masraf, periyodik kontroller) ve otomatik hatırlatmaları tek bir yerde toplar. Verileriniz cihazınızda kalır; rol bazlı erişim ve KVKK uyumlu altyapı ile güvenle çalışır.",
         features: [
           "İş & müşteri takibi — durum hattı, termin ve gecikme uyarıları",
           "Saha ziyaret planlama ve tek tıkla iş emri PDF çıktısı",
@@ -256,8 +256,8 @@ export const dictionaries = {
         name: "Opero",
         tag: "Business · Desktop",
         short:
-          "An offline, KVKK-compliant desktop suite that unifies job, customer and vehicle operations for door manufacturing companies.",
-        long: "Opero is a fully offline desktop operations suite built for door manufacturing companies. It brings job & customer tracking, field visits, vehicle management (documents, expenses, periodic inspections) and automated reminders together in one place. Your data stays on your device, secured by role-based access and a KVKK-compliant foundation.",
+          "An offline, KVKK-compliant desktop suite that unifies job, customer and vehicle operations for manufacturing, installation and field-service businesses.",
+        long: "Opero is a fully offline desktop operations suite built for manufacturing, installation and field-service businesses (furniture, windows & façades, glass, metalwork, elevators, HVAC, technical service and more). It brings job & customer tracking, field visits, vehicle management (documents, expenses, periodic inspections) and automated reminders together in one place. Your data stays on your device, secured by role-based access and a KVKK-compliant foundation.",
         features: [
           "Job & customer tracking — status pipeline, due dates and overdue alerts",
           "Field-visit planning and one-click work-order PDF export",
